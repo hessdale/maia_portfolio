@@ -4,15 +4,16 @@
             <img @click="openFridge()" id="background" src="../assets/FridgeBackground.png" alt="" srcset="">
             <img @click="closeFridge()" id="openFridge" src="../assets/FridgeOpen.png"
                 alt="fridge open with icons to click in it" width="600px">
-            <img class="icon" id="milk" src="../assets/ContactMilk.png" alt="" width="50px">
-            <img class="icon" id="yogurt" src="../assets/CaseStudyYogurt.png" alt="" width="50px">
-            <img class="icon" id="pickles" src="../assets/PhotosPickels.png" alt="" width="50px">
-            <img class="icon" id="oj" src="../assets/CaseStudyOJ.png" alt="" width="40px">
-            <img class="icon" id="sardines" src="../assets/AboutMeSardines.png" alt="" width="50px">
-            <img class="icon" id="film" src="../assets/PortraitsFilm.png" alt="" width="50px">
-            <img class="icon" id="butter" src="../assets/ServicesButter.png" alt="" width="50px">
-            <img class="icon" id="mayo" src="../assets/DesignMayo.png" alt="" width="50px">
-            <img class="icon" id="wine" src="../assets/CaseStudyWine.png" alt="" width="50px">
+            <img @hover="enlargeIcon('milk')" class="icon" id="milk" src="../assets/ContactMilk.png"
+                alt="icon of milk labeled contact">
+            <img class="icon" id="yogurt" src="../assets/CaseStudyYogurt.png" alt="icon of yogurt labeled case study">
+            <img class="icon" id="pickles" src="../assets/PhotosPickels.png" alt="icon of pickles labeled photos">
+            <img class="icon" id="oj" src="../assets/CaseStudyOJ.png" alt="icon of orange juice labeled case study">
+            <img class="icon" id="sardines" src="../assets/AboutMeSardines.png" alt="icon of sardines labeled about me">
+            <img class="icon" id="film" src="../assets/PortraitsFilm.png" alt="icon of a film roll labeled portraits">
+            <img class="icon" id="butter" src="../assets/ServicesButter.png" alt="icon of butter stick labeled services">
+            <img class="icon" id="mayo" src="../assets/DesignMayo.png" alt="icon of mayo labeled design">
+            <img class="icon" id="wine" src="../assets/CaseStudyWine.png" alt="icon of wine bottle labeled case study">
         </div>
     </div>
 </template>
@@ -20,6 +21,10 @@
 <script>
 export default {
     methods: {
+        enlargeIcon(name) {
+            currentWidth = document.getElementById(name).style.width
+            document.getElementById(name).style.width = currentWidth + 2
+        },
         openFridge() {
             document.getElementById("openFridge").style.display = 'block'
             document.getElementById("milk").style.display = 'block'
@@ -71,8 +76,8 @@ export default {
 }
 
 #oj {
-    top: 45%;
-    left: 60%;
+    top: 44.7%;
+    left: 60.5%;
     width: 3.5%;
     display: none;
 }
@@ -99,16 +104,16 @@ export default {
 }
 
 #mayo {
-    top: 73%;
+    top: 74%;
     left: 59%;
     width: 3%;
     display: none;
 }
 
 #wine {
-    top: 66%;
-    left: 62%;
-    width: 3.4%;
+    top: 66.7%;
+    left: 61.5%;
+    width: 3%;
     display: none;
 }
 
