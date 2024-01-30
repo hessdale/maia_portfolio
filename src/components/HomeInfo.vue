@@ -4,16 +4,34 @@
             <img @click="openFridge()" id="background" src="../assets/FridgeBackground.png" alt="" srcset="">
             <img @click="closeFridge()" id="openFridge" src="../assets/FridgeOpen.png"
                 alt="fridge open with icons to click in it" width="600px">
-            <img @hover="enlargeIcon('milk')" class="icon" id="milk" src="../assets/ContactMilk.png"
-                alt="icon of milk labeled contact">
-            <img class="icon" id="yogurt" src="../assets/CaseStudyYogurt.png" alt="icon of yogurt labeled case study">
-            <img class="icon" id="pickles" src="../assets/PhotosPickels.png" alt="icon of pickles labeled photos">
-            <img class="icon" id="oj" src="../assets/CaseStudyOJ.png" alt="icon of orange juice labeled case study">
-            <img class="icon" id="sardines" src="../assets/AboutMeSardines.png" alt="icon of sardines labeled about me">
-            <img class="icon" id="film" src="../assets/PortraitsFilm.png" alt="icon of a film roll labeled portraits">
-            <img class="icon" id="butter" src="../assets/ServicesButter.png" alt="icon of butter stick labeled services">
-            <img class="icon" id="mayo" src="../assets/DesignMayo.png" alt="icon of mayo labeled design">
-            <img class="icon" id="wine" src="../assets/CaseStudyWine.png" alt="icon of wine bottle labeled case study">
+            <router-link to="/contact">
+                <img class="icon" id="milk" src="../assets/ContactMilk.png"
+                    alt="icon of milk labeled contact"></router-link>
+            <router-link to="/case-study">
+                <img class="icon" id="yogurt" src="../assets/CaseStudyYogurt.png" alt="icon of yogurt labeled case study">
+            </router-link>
+            <router-link to="/photos">
+                <img class="icon" id="pickles" src="../assets/PhotosPickels.png" alt="icon of pickles labeled photos">
+            </router-link>
+            <router-link to="/case-study">
+                <img class="icon" id="oj" src="../assets/CaseStudyOJ.png" alt="icon of orange juice labeled case study">
+            </router-link>
+            <router-link to="/about">
+                <img class="icon" id="sardines" src="../assets/AboutMeSardines.png" alt="icon of sardines labeled about me">
+            </router-link>
+            <router-link to="/portraits">
+                <img class="icon" id="film" src="../assets/PortraitsFilm.png" alt="icon of a film roll labeled portraits">
+            </router-link>
+            <router-link to="/services">
+                <img class="icon" id="butter" src="../assets/ServicesButter.png"
+                    alt="icon of butter stick labeled services">
+            </router-link>
+            <router-link to="/design">
+                <img class="icon" id="mayo" src="../assets/DesignMayo.png" alt="icon of mayo labeled design">
+            </router-link>
+            <router-link to="/case-study">
+                <img class="icon" id="wine" src="../assets/CaseStudyWine.png" alt="icon of wine bottle labeled case study">
+            </router-link>
         </div>
     </div>
 </template>
@@ -21,10 +39,6 @@
 <script>
 export default {
     methods: {
-        enlargeIcon(name) {
-            currentWidth = document.getElementById(name).style.width
-            document.getElementById(name).style.width = currentWidth + 2
-        },
         openFridge() {
             document.getElementById("openFridge").style.display = 'block'
             document.getElementById("milk").style.display = 'block'
@@ -55,66 +69,111 @@ export default {
 
 <style scoped>
 #milk {
-    top: 37.5%;
+    top: 38%;
     left: 43%;
     width: 5%;
     display: none;
+    transition: transform .2s;
+}
+
+#milk:hover {
+    transform: scale(1.2);
 }
 
 #yogurt {
-    top: 35.5%;
+    top: 35.9%;
     left: 50%;
     width: 5%;
     display: none;
+    transition: transform .2s;
+}
+
+#yogurt:hover {
+    transform: scale(1.2);
 }
 
 #pickles {
-    top: 48%;
+    top: 48.4%;
     left: 47%;
     width: 3.7%;
     display: none;
+    transition: transform .2s;
+}
+
+#pickles:hover {
+    transform: scale(1.2);
 }
 
 #oj {
-    top: 44.7%;
+    top: 45.2%;
     left: 60.5%;
     width: 3.5%;
     display: none;
+    transition: transform .2s;
+}
+
+#oj:hover {
+    transform: scale(1.2);
 }
 
 #sardines {
-    top: 67%;
+    top: 67.3%;
     left: 43%;
     width: 5%;
     display: none;
+    transition: transform .2s;
+}
+
+#sardines:hover {
+    transform: scale(1.2);
 }
 
 #film {
-    top: 64%;
+    top: 64.3%;
     left: 50%;
     width: 5%;
     display: none;
+    transition: transform .2s;
+}
+
+#film:hover {
+    transform: scale(1.2);
 }
 
 #butter {
-    top: 79%;
+    top: 79.3%;
     left: 43%;
     width: 6%;
     display: none;
+    transition: transform .2s;
+}
+
+#butter:hover {
+    transform: scale(1.2);
 }
 
 #mayo {
-    top: 74%;
+    top: 74.3%;
     left: 59%;
     width: 3%;
     display: none;
+    transition: transform .2s;
+}
+
+#mayo:hover {
+    transform: scale(1.2);
 }
 
 #wine {
-    top: 66.7%;
+    top: 67.37%;
     left: 61.5%;
     width: 3%;
     display: none;
+    transition: transform .2s;
+}
+
+#wine:hover {
+    transform: scale(1.2);
 }
 
 .icon {
@@ -135,7 +194,7 @@ export default {
 #openFridge {
     position: absolute;
     width: 40%;
-    top: 21%;
+    top: 21.7%;
     left: 35.5%;
     display: none;
 }
