@@ -2,7 +2,7 @@
     <div>
         <div id="parent">
             <img @click="openFridge()" id="background" src="../assets/FridgeBackground.png" alt="" srcset="">
-            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/FridgeOpen.png" alt="">
+            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/FridgeMobileBackground.png" alt="">
             <img @click="closeFridge()" id="openFridge" src="../assets/FridgeOpen.png"
                 alt="fridge open with icons to click in it" width="600px">
             <router-link to="/contact">
@@ -223,10 +223,10 @@ export default {
     }
 
     #mobileBackground {
+        width: 90%;
         position: relative;
         display: grid;
-        width: 100%;
-        top: 30%;
+        margin-top: 100px;
     }
 
     #parent {
@@ -235,61 +235,62 @@ export default {
 
     #openFridge {
         width: 100%;
-        left: 0;
+        top: -3%;
+        left: -5%;
     }
 
     #milk {
-        top: 44%;
-        left: 19%;
+        top: 20%;
+        left: 13%;
         width: 10%;
     }
 
     #yogurt {
-        top: 40.6%;
-        left: 37%;
+        top: 17%;
+        left: 33%;
         width: 11%;
     }
 
     #pickles {
-        top: 54.3%;
-        left: 30%;
+        top: 32%;
+        left: 25%;
         width: 8%;
     }
 
     #oj {
-        top: 50.3%;
-        left: 61%;
+        top: 27%;
+        left: 55%;
         width: 8%;
     }
 
     #sardines {
-        top: 75.5%;
-        left: 15%;
+        top: 53%;
+        left: 13%;
         width: 12%;
     }
 
     #film {
-        top: 74.3%;
-        left: 40%;
+        top: 52%;
+        left: 34%;
         width: 8%;
     }
 
     #butter {
-        top: 90%;
-        left: 20%;
+        top: 70%;
+        left: 13%;
         width: 12%;
     }
 
     #mayo {
-        top: 82%;
-        left: 57%;
-        width: 8%;
+        top: 62%;
+        left: 52%;
+        width: 7%;
     }
 
     #wine {
-        top: 73%;
-        left: 64%;
-        width: 8%;
+        top: 55%;
+        left: 60%;
+        width: 7%;
     }
 }
 </style>
