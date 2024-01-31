@@ -2,6 +2,7 @@
     <div>
         <div id="parent">
             <img @click="openFridge()" id="background" src="../assets/FridgeBackground.png" alt="" srcset="">
+            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/FridgeOpen.png" alt="">
             <img @click="closeFridge()" id="openFridge" src="../assets/FridgeOpen.png"
                 alt="fridge open with icons to click in it" width="600px">
             <router-link to="/contact">
@@ -39,6 +40,18 @@
 <script>
 export default {
     methods: {
+        openFridgeMobile() {
+            document.getElementById("openFridge").style.display = 'block'
+            document.getElementById("milk").style.display = 'block'
+            document.getElementById("yogurt").style.display = 'block'
+            document.getElementById("pickles").style.display = 'block'
+            document.getElementById("oj").style.display = 'block'
+            document.getElementById("sardines").style.display = 'block'
+            document.getElementById("film").style.display = 'block'
+            document.getElementById("butter").style.display = 'block'
+            document.getElementById("mayo").style.display = 'block'
+            document.getElementById("wine").style.display = 'block'
+        },
         openFridge() {
             document.getElementById("openFridge").style.display = 'block'
             document.getElementById("milk").style.display = 'block'
@@ -197,5 +210,86 @@ export default {
     top: 21.7%;
     left: 35.5%;
     display: none;
+}
+
+#mobileBackground {
+    display: none;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    #background {
+        display: none;
+    }
+
+    #mobileBackground {
+        position: relative;
+        display: grid;
+        width: 100%;
+        top: 30%;
+    }
+
+    #parent {
+        height: 100%;
+    }
+
+    #openFridge {
+        width: 100%;
+        left: 0;
+    }
+
+    #milk {
+        top: 44%;
+        left: 19%;
+        width: 10%;
+    }
+
+    #yogurt {
+        top: 40.6%;
+        left: 37%;
+        width: 11%;
+    }
+
+    #pickles {
+        top: 54.3%;
+        left: 30%;
+        width: 8%;
+    }
+
+    #oj {
+        top: 50.3%;
+        left: 61%;
+        width: 8%;
+    }
+
+    #sardines {
+        top: 75.5%;
+        left: 15%;
+        width: 12%;
+    }
+
+    #film {
+        top: 74.3%;
+        left: 40%;
+        width: 8%;
+    }
+
+    #butter {
+        top: 90%;
+        left: 20%;
+        width: 12%;
+    }
+
+    #mayo {
+        top: 82%;
+        left: 57%;
+        width: 8%;
+    }
+
+    #wine {
+        top: 73%;
+        left: 64%;
+        width: 8%;
+    }
 }
 </style>
