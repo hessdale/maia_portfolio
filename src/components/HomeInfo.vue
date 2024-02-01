@@ -1,37 +1,44 @@
 <template>
     <div>
         <div id="parent">
-            <img @click="openFridge()" id="background" src="../assets/FridgeBackground.png" alt="" srcset="">
-            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/FridgeMobileBackground.png" alt="">
-            <img @click="closeFridge()" id="openFridge" src="../assets/FridgeOpen.png"
+            <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png" alt="" srcset="">
+            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/HomeAssets/FridgeMobileBackground.png"
+                alt="">
+            <img @click="closeFridge()" id="openFridge" src="../assets/HomeAssets/FridgeOpen.png"
                 alt="fridge open with icons to click in it" width="600px">
             <router-link to="/contact">
-                <img class="icon" id="milk" src="../assets/ContactMilk.png"
+                <img class="icon" id="milk" src="../assets/HomeAssets/ContactMilk.png"
                     alt="icon of milk labeled contact"></router-link>
             <router-link to="/case-study">
-                <img class="icon" id="yogurt" src="../assets/CaseStudyYogurt.png" alt="icon of yogurt labeled case study">
+                <img class="icon" id="yogurt" src="../assets/HomeAssets/CaseStudyYogurt.png"
+                    alt="icon of yogurt labeled case study">
             </router-link>
             <router-link to="/photos">
-                <img class="icon" id="pickles" src="../assets/PhotosPickels.png" alt="icon of pickles labeled photos">
+                <img class="icon" id="pickles" src="../assets/HomeAssets/PhotosPickels.png"
+                    alt="icon of pickles labeled photos">
             </router-link>
             <router-link to="/case-study">
-                <img class="icon" id="oj" src="../assets/CaseStudyOJ.png" alt="icon of orange juice labeled case study">
+                <img class="icon" id="oj" src="../assets/HomeAssets/CaseStudyOJ.png"
+                    alt="icon of orange juice labeled case study">
             </router-link>
             <router-link to="/about">
-                <img class="icon" id="sardines" src="../assets/AboutMeSardines.png" alt="icon of sardines labeled about me">
+                <img class="icon" id="sardines" src="../assets/HomeAssets/AboutMeSardines.png"
+                    alt="icon of sardines labeled about me">
             </router-link>
             <router-link to="/portraits">
-                <img class="icon" id="film" src="../assets/PortraitsFilm.png" alt="icon of a film roll labeled portraits">
+                <img class="icon" id="film" src="../assets/HomeAssets/PortraitsFilm.png"
+                    alt="icon of a film roll labeled portraits">
             </router-link>
             <router-link to="/services">
-                <img class="icon" id="butter" src="../assets/ServicesButter.png"
+                <img class="icon" id="butter" src="../assets/HomeAssets/ServicesButter.png"
                     alt="icon of butter stick labeled services">
             </router-link>
             <router-link to="/design">
-                <img class="icon" id="mayo" src="../assets/DesignMayo.png" alt="icon of mayo labeled design">
+                <img class="icon" id="mayo" src="../assets/HomeAssets/DesignMayo.png" alt="icon of mayo labeled design">
             </router-link>
             <router-link to="/case-study">
-                <img class="icon" id="wine" src="../assets/CaseStudyWine.png" alt="icon of wine bottle labeled case study">
+                <img class="icon" id="wine" src="../assets/HomeAssets/CaseStudyWine.png"
+                    alt="icon of wine bottle labeled case study">
             </router-link>
         </div>
     </div>
@@ -292,5 +299,4 @@ export default {
         left: 60%;
         width: 7%;
     }
-}
-</style>
+}</style>
