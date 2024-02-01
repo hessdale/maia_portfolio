@@ -1,27 +1,61 @@
 <template>
-    <div id="header">
-        <span id="logo">
-            <router-link to="/home">
-                <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="30%">
-            </router-link>
+    <div>
+        <span id="header">
+            <span id="logo">
+                <router-link to="/home">
+                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="30%">
+                </router-link>
+            </span>
+            <span id="menu">
+                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="8%">
+                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="8%">
+            </span>
         </span>
-        <span id="menu">
-            <img src="../assets/HamburgerMenu.svg" alt="menu icon" width="8%">
+        <span id="HeaderSubMenu">
+            <span></span>
+            <router-link to="/about">About</router-link>
+            <router-link to="/home">Home</router-link>
+            <router-link to="/case-study">Case Study</router-link>
+            <router-link to="/contact">Contact</router-link>
+            <router-link to="/design">Design</router-link>
+            <router-link to="/photos">Photos</router-link>
+            <router-link to="/portraits">Portraits</router-link>
+            <router-link to="/services">Services</router-link>
         </span>
     </div>
 </template>
 
 <script>
 export default {
-
+    methods: {
+        OpenMenu() {
+            document.getElementById('HeaderSubMenu').style.display = "grid"
+            document.getElementById('MenuIcon').style.display = "none"
+            document.getElementById('CloseIcon').style.display = "grid"
+        },
+        CloseMenu() {
+            document.getElementById('HeaderSubMenu').style.display = "none"
+            document.getElementById('CloseIcon').style.display = "none"
+            document.getElementById('MenuIcon').style.display = "grid"
+        }
+    },
 }
 </script>
 
 <style scoped>
+#CloseIcon {
+    display: none;
+}
+
+#HeaderSubMenu {
+    display: none;
+}
+
 #header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
+    margin: 3%;
 }
 
 #logo {
@@ -30,5 +64,6 @@ export default {
 
 #menu {
     justify-content: end;
+    cursor: pointer;
 }
 </style>
