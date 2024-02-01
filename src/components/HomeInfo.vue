@@ -202,6 +202,7 @@ export default {
 
 #parent {
     position: relative;
+    background-color: #EADDA7;
 }
 
 #background {
@@ -299,4 +300,5 @@ export default {
         left: 60%;
         width: 7%;
     }
-}</style>
+}
+</style>
