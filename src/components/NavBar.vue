@@ -1,9 +1,9 @@
 <template>
     <div>
         <span id="header">
-            <span id="logo">
+            <span>
                 <router-link to="/home">
-                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="30%">
+                    <img id="logo" src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="35%">
                 </router-link>
             </span>
             <span id="menu">
@@ -59,11 +59,14 @@ export default {
 }
 
 #logo {
-    justify-content: start;
+    display: grid;
+    justify-items: start;
+    width: 30%;
 }
 
 #menu {
-    justify-content: end;
+    display: grid;
+    justify-items: end;
     cursor: pointer;
 }
 </style>
