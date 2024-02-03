@@ -1,7 +1,19 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <h3>Portraits Page</h3>
+        <div id="background">
+            <article id="title">
+                <h1 class="whiteFont">portraits</h1>
+                <p class="whiteFont">Portraits I have taken commercially and creatively
+                </p>
+            </article>
+            <span id="images">
+                <img src="../assets/PortraitsAssets/arrow-left.svg" alt="icon left arrow">
+                <img src="../assets/PortraitsAssets/JewelryPortrait.jpeg" alt="portrait of a model wearing necklaces"
+                    width="450px">
+                <img src="../assets/PortraitsAssets/arrow-right.svg" alt="icon right arrow">
+            </span>
+        </div>
     </div>
 </template>
 
@@ -14,4 +26,18 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+#background {
+    background-color: #C72828;
+}
+
+.whiteFont {
+    color: #EAE5DE;
+}
+
+#images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+</style>
