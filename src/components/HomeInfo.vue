@@ -1,11 +1,12 @@
 <template>
     <div>
         <div id="parent">
-            <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png" alt="" srcset="">
+            <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png"
+                alt="background of a kitchen with washer and a fridge with a sign above saying click to open my fridge">
             <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/HomeAssets/FridgeMobileBackground.png"
-                alt="">
+                alt="closed fridge icon with no kitchen surrounding it for mobile view">
             <img @click="closeFridge()" id="openFridge" src="../assets/HomeAssets/FridgeOpen.png"
-                alt="fridge open with icons to click in it" width="600px">
+                alt="fridge open with icons in it and icons directing to pages">
             <router-link to="/contact">
                 <img class="icon" id="milk" src="../assets/HomeAssets/ContactMilk.png"
                     alt="icon of milk labeled contact"></router-link>
@@ -231,24 +232,27 @@ export default {
     }
 
     #mobileBackground {
-        width: 90%;
-        position: relative;
         display: grid;
-        margin-top: 100px;
+        position: relative;
+        top: 4vh;
+        left: 5.7%;
+        width: 90%;
+    }
+
+    #openFridge {
+        display: grid;
+        position: absolute;
+        top: 3vh;
+        left: 0;
+        width: 100%;
     }
 
     #parent {
         height: 100%;
     }
 
-    #openFridge {
-        width: 100%;
-        top: -3%;
-        left: -5%;
-    }
-
     #milk {
-        top: 20%;
+        top: 2vh;
         left: 13%;
         width: 10%;
     }
