@@ -5,7 +5,7 @@
                 <img src="../assets/AboutAssets/MaiaKid.jpg" alt="a young photo of Maia giving the peace sign"
                     width="200px">
                 <article>
-                    <h1 class="whiteFont">Whose kid is this?</h1>
+                    <h1 class="whiteFont" id="Title">Whose kid is this?</h1>
                     <p class="whiteFont">This kid is me, and she (many years later) will work
                         with you to create process-driven, result-proven
                         work. Raised in Vancouver, BC, this kid grew to be
@@ -13,7 +13,7 @@
                         her a brief, and she’ll run with it.</p>
                 </article>
                 <article>
-                    <h1 class="whiteFont">Not a Kid anymore.</h1>
+                    <h1 class="whiteFont" id="Title">Not a Kid anymore.</h1>
                     <p class="whiteFont">Today, this girl does it all! From photography to
                         illustrations, she’s a star. Looking for a commercial
                         photographer for your next project? Updated
@@ -21,7 +21,7 @@
                 </article>
                 <img src="../assets/AboutAssets/MaiaAdult.jpg" alt="a recent headshot of Maia" width="200px">
             </span>
-            <a id="email" href="mailto:headfieldmaia@gmail.com">headfieldmaia@gmail.com</a>
+            <a id="email" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
             <img src="../assets/AboutAssets/FloatingHeads.gif" alt="gif of floating heads of maia scrolling to the leaft">
         </div>
     </div>
@@ -34,6 +34,10 @@ export default {
 </script>
   
 <style scoped>
+#Bold {
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
 .whiteFont {
     color: #EAE5DE;
     text-align: start;

@@ -2,7 +2,7 @@
     <div>
         <span id="header">
             <span>
-                <router-link to="/home">
+                <router-link to="/">
                     <img id="logo" src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="35%">
                 </router-link>
             </span>
