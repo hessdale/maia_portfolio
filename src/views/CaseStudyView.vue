@@ -1,15 +1,16 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <h3>Case Study Page</h3>
+        <case-study-info></case-study-info>
     </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import CaseStudyInfo from '@/components/CaseStudyInfo.vue';
 export default {
     components: {
-        NavBar,
+        NavBar, CaseStudyInfo
     },
 }
 </script>
