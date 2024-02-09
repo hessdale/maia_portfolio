@@ -14,12 +14,13 @@
         <span id="HeaderSubMenu">
             <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
-            <router-link class="link" to="/case-study">Case Study</router-link>
+            <router-link class="link" to="/case-study">Blue Ruby Case Study</router-link>
             <router-link class="link" to="/contact">Contact</router-link>
             <router-link class="link" to="/design">Design</router-link>
             <router-link class="link" to="/photos">Photos</router-link>
             <router-link class="link" to="/portraits">Portraits</router-link>
             <router-link class="link" to="/services">Services</router-link>
+            <router-link class="link" to="/login">Admin Login</router-link>
         </span>
     </div>
 </template>

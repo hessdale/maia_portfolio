@@ -8,6 +8,7 @@ import PhotosView from '../views/PhotosView.vue'
 import PortraitsView from '../views/PortraitsView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import AboutView from '../views/AboutView.vue'
+import LoginView from '../views/LoginView.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,11 @@ const routes = [
     path: '/about',
     name: 'about',
     component: AboutView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
   },
 ]
 
