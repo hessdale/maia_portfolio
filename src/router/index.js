@@ -9,6 +9,7 @@ import PortraitsView from '../views/PortraitsView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import AboutView from '../views/AboutView.vue'
 import LoginView from '../views/LoginView.vue'
+import UploadPhotoView from '../views/UploadPhotoView.vue'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/upload-photo',
+    name: 'upload',
+    component: UploadPhotoView
   },
 ]
 
