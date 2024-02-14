@@ -16,9 +16,24 @@
 </template>
 
 <script>
-
+import axios from "axios";
 export default {
-
+    data() {
+        return {
+            photos: undefined
+        }
+    },
+    mounted() {
+        axios.request({
+            url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-photos`,
+            method: `GET`,
+        }).then((response) => {
+            console.log(response)
+        }).catch((error) => {
+            console.log(error)
+            console.log("failed")
+        })
+    },
 }
 </script>
 
@@ -35,5 +50,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
 }
 </style>
