@@ -7,9 +7,10 @@
                 <p class="whiteFont">Pieces In have designed for use accross print, web, and social media.</p>
             </article>
             <span id="images">
-                <img src="../assets/DesignAssets/arrow-left.svg" alt="icon left arrow">
+
+                <img class="arrow" src="../assets/DesignAssets/arrow-left.svg" alt="icon left arrow">
                 <img src="../assets/DesignAssets/Bonsai_V01.jpg" alt="a photo of a bonsai tree" width="450px">
-                <img src="../assets/DesignAssets/arrow-right.svg" alt="icon right arrow">
+                <img class="arrow" src="../assets/DesignAssets/arrow-right.svg" alt="icon right arrow">
             </span>
         </div>
     </div>
@@ -29,6 +30,7 @@ export default {
             method: `GET`,
         }).then((response) => {
             console.log(response)
+            this.photos = response.data
         }).catch((error) => {
             console.log(error)
             console.log("failed")
@@ -38,6 +40,10 @@ export default {
 </script>
 
 <style scoped>
+.arrow {
+    cursor: pointer;
+}
+
 #background {
     background-color: #C72828;
 }
