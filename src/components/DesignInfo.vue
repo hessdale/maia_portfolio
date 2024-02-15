@@ -1,16 +1,18 @@
 <template>
     <div>
-
         <div id="background">
             <article id="title">
                 <h1 class="whiteFont">design</h1>
                 <p class="whiteFont">Pieces In have designed for use accross print, web, and social media.</p>
             </article>
             <span id="images">
-
-                <img class="arrow" src="../assets/DesignAssets/arrow-left.svg" alt="icon left arrow">
-                <img src="../assets/DesignAssets/Bonsai_V01.jpg" alt="a photo of a bonsai tree" width="450px">
-                <img class="arrow" src="../assets/DesignAssets/arrow-right.svg" alt="icon right arrow">
+                <img @click="cyclePhotoBackward()" class="arrow" src="../assets/DesignAssets/arrow-left.svg"
+                    alt="icon left arrow">
+                <div id="currentImg">
+                </div>
+                <!-- <img :src="getImageUrl()" alt="a photo of a bonsai tree" width="450px"> -->
+                <img @click="cyclePhotoForward()" class="arrow" src="../assets/DesignAssets/arrow-right.svg"
+                    alt="icon right arrow">
             </span>
         </div>
     </div>
@@ -18,13 +20,33 @@
 
 <script>
 import axios from "axios";
+
 export default {
+    methods: {
+        cyclePhotoForward() {
+            this.currentPhoto = this.currentPhoto + 1
+            console.log(this.currentPhoto)
+        },
+        cyclePhotoBackward(currentPhoto) {
+            currentPhoto
+        },
+        getImageUrl() {
+            let file_name = this.photos[this.currentPhoto].file
+            let image_location = require("../../../maia_backend/images/" + file_name)
+            let imageZone = document.getElementById("currentImg")
+            let image_html = `<img src="` + image_location + `" alt="a photo of a bonsai tree" width="450px">`
+            console.log(image_html)
+            imageZone.insertAdjacentHTML("beforeend", image_html)
+        },
+    },
     data() {
         return {
-            photos: undefined
+            photos: undefined,
+            currentPhoto: 0
         }
     },
     mounted() {
+        this.getImageUrl()
         axios.request({
             url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-photos`,
             method: `GET`,
@@ -36,6 +58,7 @@ export default {
             console.log("failed")
         })
     },
+
 }
 </script>
 
