@@ -1,14 +1,14 @@
 <template>
     <div>
         <span id="header">
-            <span>
+            <span id="logo">
                 <router-link to="/">
-                    <img id="logo" src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="35%">
+                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="100%">
                 </router-link>
             </span>
             <span id="menu">
-                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="8%">
-                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="8%">
+                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="100%">
+                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="100%">
             </span>
         </span>
         <span id="HeaderSubMenu">
@@ -20,7 +20,6 @@
             <router-link class="link" to="/photos">Photos</router-link>
             <router-link class="link" to="/portraits">Portraits</router-link>
             <router-link class="link" to="/services">Services</router-link>
-            <router-link class="link" to="/login">Admin Login</router-link>
         </span>
     </div>
 </template>
@@ -47,10 +46,12 @@ export default {
     text-decoration: none;
     color: #C72828;
     font-size: larger;
+    width: 15%;
 }
 
 #CloseIcon {
     display: none;
+    width: 100%;
 }
 
 #HeaderSubMenu {
@@ -67,12 +68,13 @@ export default {
 #logo {
     display: grid;
     justify-items: start;
-    width: 30%;
+    width: 35%;
 }
 
 #menu {
     display: grid;
     justify-items: end;
     cursor: pointer;
+    width: 8%;
 }
 </style>

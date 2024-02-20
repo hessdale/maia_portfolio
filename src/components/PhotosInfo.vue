@@ -7,9 +7,11 @@
                 </p>
             </article>
             <span id="images">
-                <img src="../assets/MiscPhotosAssets/arrow-left.svg" alt="icon left arrow">
-                <img src="../assets/MiscPhotosAssets/Perfume.jpeg" alt="a photo of a bonsai tree" width="450px">
-                <img src="../assets/MiscPhotosAssets/arrow-right.svg" alt="icon right arrow">
+
+                <div v-for="(photo, i) in photos" :key="i">
+                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
+                </div>
+
             </span>
         </div>
     </div>
@@ -18,6 +20,12 @@
 <script>
 import axios from "axios";
 export default {
+    methods: {
+        getImageUrl(file_name) {
+            let image_location = require("../../../maia_backend/images/" + file_name)
+            return image_location
+        },
+    },
     data() {
         return {
             photos: undefined

@@ -6,7 +6,7 @@
                 <p class="whiteFont">Pieces In have designed for use accross print, web, and social media.</p>
             </article>
             <span id="images">
-                <div id="carousel" v-for="(photo, i) in photos" :key="i">
+                <div v-for="(photo, i) in photos" :key="i">
                     <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
                 </div>
             </span>
@@ -19,12 +19,10 @@ import axios from "axios";
 
 export default {
     methods: {
-
         getImageUrl(file_name) {
             let image_location = require("../../../maia_backend/images/" + file_name)
             return image_location
         },
-
     },
     data() {
         return {
@@ -42,8 +40,6 @@ export default {
             console.log(error)
             console.log("failed")
         })
-        this.setDisplay()
-
     },
 
 }
