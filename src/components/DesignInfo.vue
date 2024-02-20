@@ -38,6 +38,13 @@ export default {
             let image_location = require("../../../maia_backend/images/" + file_name)
             return image_location
         },
+        setDisplay() {
+            for (let index = 0; index < this.photos.length; index++) {
+                document.getElementById[index.toString()].style.display = "none"
+            }
+            document.getElementById[this.currentPhoto.toString()].style.display = "grid"
+
+        }
     },
     data() {
         return {
@@ -56,7 +63,8 @@ export default {
             console.log(error)
             console.log("failed")
         })
-        document.getElementById[this.currentPhoto.toString()].style.display = "grid"
+        this.setDisplay()
+
     },
 
 }
