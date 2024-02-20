@@ -9,9 +9,8 @@
                 <img @click="cyclePhotoBackward()" class="arrow" src="../assets/DesignAssets/arrow-left.svg"
                     alt="icon left arrow">
                 <div id="carousel" v-for="(photo, i) in photos" :key="i">
-                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]">
+                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
                 </div>
-                <!-- <img :src="getImageUrl()" alt="a photo of a bonsai tree" width="450px"> -->
                 <img @click="cyclePhotoForward()" class="arrow" src="../assets/DesignAssets/arrow-right.svg"
                     alt="icon right arrow">
             </span>
@@ -25,18 +24,19 @@ import axios from "axios";
 export default {
     methods: {
         cyclePhotoForward() {
-            this.currentPhoto = this.currentPhoto + 1
-            console.log(this.currentPhoto)
+            document.getElementById[this.currentPhoto].style.display = "none"
+            this.currentPhoto++
+            if (this.currentPhoto >= this.photos.length) {
+                this.currentPhoto = 0
+            }
+            document.getElementById[this.currentPhoto].style.display = "grid"
         },
         cyclePhotoBackward(currentPhoto) {
             currentPhoto
         },
         getImageUrl(file_name) {
             let image_location = require("../../../maia_backend/images/" + file_name)
-            let imageZone = document.getElementById("currentImg")
-            let image_html = `<img src="` + image_location + `" alt="a photo of a bonsai tree" width="450px">`
-            console.log(image_html)
-            imageZone.insertAdjacentHTML("beforeend", image_html)
+            return image_location
         },
     },
     data() {
@@ -46,7 +46,6 @@ export default {
         }
     },
     mounted() {
-        this.getImageUrl()
         axios.request({
             url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-photos`,
             method: `GET`,
@@ -57,6 +56,7 @@ export default {
             console.log(error)
             console.log("failed")
         })
+        document.getElementById[this.currentPhoto.toString()].style.display = "grid"
     },
 
 }
