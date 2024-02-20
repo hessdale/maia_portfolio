@@ -6,13 +6,9 @@
                 <p class="whiteFont">Pieces In have designed for use accross print, web, and social media.</p>
             </article>
             <span id="images">
-                <img @click="cyclePhotoBackward()" class="arrow" src="../assets/DesignAssets/arrow-left.svg"
-                    alt="icon left arrow">
                 <div id="carousel" v-for="(photo, i) in photos" :key="i">
                     <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
                 </div>
-                <img @click="cyclePhotoForward()" class="arrow" src="../assets/DesignAssets/arrow-right.svg"
-                    alt="icon right arrow">
             </span>
         </div>
     </div>
@@ -23,33 +19,16 @@ import axios from "axios";
 
 export default {
     methods: {
-        cyclePhotoForward() {
-            document.getElementById[this.currentPhoto].style.display = "none"
-            this.currentPhoto++
-            if (this.currentPhoto >= this.photos.length) {
-                this.currentPhoto = 0
-            }
-            document.getElementById[this.currentPhoto].style.display = "grid"
-        },
-        cyclePhotoBackward(currentPhoto) {
-            currentPhoto
-        },
+
         getImageUrl(file_name) {
             let image_location = require("../../../maia_backend/images/" + file_name)
             return image_location
         },
-        setDisplay() {
-            for (let index = 0; index < this.photos.length; index++) {
-                document.getElementById[index.toString()].style.display = "none"
-            }
-            document.getElementById[this.currentPhoto.toString()].style.display = "grid"
 
-        }
     },
     data() {
         return {
             photos: undefined,
-            currentPhoto: 0
         }
     },
     mounted() {
