@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import CaseStudyView from '../views/CaseStudyView.vue'
+import RubyCaseStudyView from '../views/RubyCaseStudyView.vue'
 import ContactView from '../views/ContactView.vue'
 import DesignView from '../views/DesignView.vue'
 import PhotosView from '../views/PhotosView.vue'
@@ -20,9 +20,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/case-study',
+    path: '/blueruby-case-study',
     name: 'case study',
-    component: CaseStudyView
+    component: RubyCaseStudyView
   },
   {
     path: '/contact',

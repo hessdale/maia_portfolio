@@ -51,7 +51,6 @@ export default {
 #who {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10px;
     padding: 20px;
 }
 
