@@ -8,7 +8,8 @@
             <span id="images">
                 <img @click="cyclePhotoBackward()" class="arrow" src="../assets/DesignAssets/arrow-left.svg"
                     alt="icon left arrow">
-                <div id="currentImg">
+                <div id="carousel" v-for="(photo, i) in photos" :key="i">
+                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]">
                 </div>
                 <!-- <img :src="getImageUrl()" alt="a photo of a bonsai tree" width="450px"> -->
                 <img @click="cyclePhotoForward()" class="arrow" src="../assets/DesignAssets/arrow-right.svg"
@@ -30,8 +31,7 @@ export default {
         cyclePhotoBackward(currentPhoto) {
             currentPhoto
         },
-        getImageUrl() {
-            let file_name = this.photos[this.currentPhoto].file
+        getImageUrl(file_name) {
             let image_location = require("../../../maia_backend/images/" + file_name)
             let imageZone = document.getElementById("currentImg")
             let image_html = `<img src="` + image_location + `" alt="a photo of a bonsai tree" width="450px">`

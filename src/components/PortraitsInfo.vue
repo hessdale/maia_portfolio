@@ -26,13 +26,14 @@ export default {
     },
     mounted() {
         axios.request({
-            url: `${process.env.VUE_APP_BASE_URL}/api/get-design-photos`,
+            url: `${process.env.VUE_APP_BASE_DOMAIN}/api/portrait-photos`,
             method: `GET`,
         }).then((response) => {
             console.log(response)
+            this.photos = response.data
         }).catch((error) => {
             console.log(error)
-            console.log("login failed")
+            console.log("failed")
         })
     },
 }
