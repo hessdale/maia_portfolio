@@ -10,10 +10,16 @@ import ServicesView from '../views/ServicesView.vue'
 import AboutView from '../views/AboutView.vue'
 import LoginView from '../views/LoginView.vue'
 import UploadPhotoView from '../views/UploadPhotoView.vue'
+import AuntyJensCaseStudyView from '../views/AuntyJensCaseStudyView.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/auntyjens-case-study',
+    name: 'Aunty Jens',
+    component: AuntyJensCaseStudyView
+  },
   {
     path: '/',
     name: 'home',

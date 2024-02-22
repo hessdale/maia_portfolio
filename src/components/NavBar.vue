@@ -20,10 +20,9 @@
                 <img id="SubMenuClose" @click="CloseCase()" src="../assets/xmark.svg" alt="icon to close sub menu">
             </div>
             <div id="CaseStudyMenu">
-                <router-link class="CaseStudyLink" to="/">Blue Ruby</router-link>
-                <router-link class="CaseStudyLink" to="/">Aunty Jen's</router-link>
+                <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
+                <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
             </div>
-
             <router-link class="link" to="/contact">Contact</router-link>
             <router-link class="link" to="/design">Design</router-link>
             <router-link class="link" to="/photos">Photos</router-link>
