@@ -1,8 +1,10 @@
 <template>
     <div>
-        <img src="../assets/AuntyJensAssets/HandsGrabbingPizza.jpg"
-            alt="photo of hands grabbing at a pepperoni mushroom pizza" width="100%">
-        <h1 id="auntyTitle">Aunty Jens Pizzeria</h1>
+        <div id="pizzaBackground">
+            <div id="center">
+                <h1 id="auntyTitle">Aunty Jens Pizzeria</h1>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -13,9 +15,27 @@ export default {
 </script>
 
 <style scoped>
-#AuntyTitle {
-    color: black;
+#pizzaBackground {
+    background-image: url(@/assets/AuntyJensAssets/HandsGrabbingPizza.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+}
+
+#auntyTitle {
     font-family: 'NeueHaasUnicaPro-Black';
-    font-size: 25px;
+    color: #EAE5DE;
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+}
+
+#center {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15vh;
 }
 </style>
