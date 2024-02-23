@@ -1,15 +1,16 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <h3>Contact Page</h3>
+        <contact-info></contact-info>
     </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import ContactInfo from '@/components/ContactInfo.vue';
 export default {
     components: {
-        NavBar,
+        NavBar, ContactInfo
     },
 }
 </script>
