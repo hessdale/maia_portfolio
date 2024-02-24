@@ -1,15 +1,16 @@
 <template>
     <div>
         <nav-bar></nav-bar>
-        <h3>Services Page</h3>
+        <services-info></services-info>
     </div>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import ServicesInfo from '@/components/ServicesInfo.vue';
 export default {
     components: {
-        NavBar,
+        NavBar, ServicesInfo
     },
 }
 </script>
