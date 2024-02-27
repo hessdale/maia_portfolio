@@ -1,5 +1,6 @@
 <template>
     <div>
+    
         <div id="VideoBackground">
             <span id="Center">
                 <h1 id="Rubytitle">Blue Ruby Jewelry</h1>
@@ -64,6 +65,7 @@ export default {
 <style scoped>
 .underline {
     text-decoration: underline;
+    text-align:center;
 }
 
 #BlueRubyInfo2 {
