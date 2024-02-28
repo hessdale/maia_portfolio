@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="page">
         <div id="parent">
             <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png"
                 alt="background of a kitchen with washer and a fridge with a sign above saying click to open my fridge">
@@ -89,12 +89,12 @@ export default {
 </script>
 
 <style scoped>
-div{
+#page{
     background-color: #EADDA7;
     height: 100vh;
 }
 #milk {
-    top: 38%;
+    top: 38.7%;
     left: 43%;
     width: 5%;
     display: none;
@@ -106,7 +106,7 @@ div{
 }
 
 #yogurt {
-    top: 35.9%;
+    top: 36.5%;
     left: 50%;
     width: 5%;
     display: none;
@@ -118,7 +118,7 @@ div{
 }
 
 #pickles {
-    top: 48.4%;
+    top: 48%;
     left: 47%;
     width: 3.7%;
     display: none;
