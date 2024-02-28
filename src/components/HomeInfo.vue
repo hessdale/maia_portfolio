@@ -91,6 +91,7 @@ export default {
 <style scoped>
 div{
     background-color: #EADDA7;
+    height: 100vh;
 }
 #milk {
     top: 38%;
@@ -212,8 +213,7 @@ div{
 #background {
     position: relative;
     width: 100%;
-    top: 0;
-    left: 0;
+    top: 12%;
 }
 
 #openFridge {
