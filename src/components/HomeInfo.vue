@@ -89,6 +89,9 @@ export default {
 </script>
 
 <style scoped>
+div{
+    background-color: #EADDA7;
+}
 #milk {
     top: 38%;
     left: 43%;

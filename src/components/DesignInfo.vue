@@ -56,6 +56,7 @@ export default {
 
 .whiteFont {
     color: #EAE5DE;
+    margin: 0;
 }
 
 #images {

@@ -95,7 +95,7 @@ export default {
 
 #about {
     background-color: #C72828;
-    height: 100vh;
+    height: 100%;
     padding-top: 3%;
 }
 
