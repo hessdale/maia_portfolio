@@ -1,13 +1,13 @@
 <template>
-    <div>
+    <div id="pageBackground">
         <div id="pizzaBackground">
             <div id="center">
                 <h1 id="auntyTitle">Aunty Jens Pizzeria</h1>
             </div>
         </div>
-        <article>
+        <article class="column2">
             <div>
-                <h2>AUNTY JEN'S PIZZARIA</h2>
+                <h2 class="titleUnderline">AUNTY JEN'S PIZZARIA</h2>
                 <p>A commercial drive staple, Aunty Jen’s Pizzeria is
                     a prized location for 1AM pizza runs. With
                     Commercial Drive growing as a popular spot for
@@ -23,27 +23,30 @@
                     alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="40%">
             </div>
         </article>
-        <article>
+        <article class="column2">
             <div>
                 <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
                     alt="green pizza box with an icon of a green woman and a pizza box on it" width="40%">
             </div>
-            <div>
-                <h2>DELIVERABLES</h2>
-                <p>- Brand Identity</p>
-                <p>- Moodboarding</p>
-                <p>- Signage Design</p>
-            </div>
-            <div>
-                <h2>INDUSTRY</h2>
-                <p>Food & Beverages</p>
-                <h2>LOCATION</h2>
-                <p>Vancouver, BC</p>
-            </div>
+            <article>
+                <div>
+                    <h2 class="titleUnderline">DELIVERABLES</h2>
+                    <p>- Brand Identity</p>
+                    <p>- Moodboarding</p>
+                    <p>- Signage Design</p>
+                </div>
+                <div>
+                    <h2 class="titleUnderline">INDUSTRY</h2>
+                    <p>Food & Beverages</p>
+                    <h2>LOCATION</h2>
+                    <p>Vancouver, BC</p>
+                </div>
+            </article>
         </article>
-        <article>
+        <div id="blackBar"></div>
+        <article class="column2">
             <div>
-                <h1>BRANDING</h1>
+                <h1 id="brandTitle">BRANDING</h1>
                 <p>Bright and eye-catching! This rebrand takes
                     the “Aunty Jen” character used in their
                     current logo and gives her a modern twist.
@@ -52,17 +55,17 @@
                     colours to create unique branding that’s
                     just as perfect as their ‘za!</p>
             </div>
-            <div>
+            <div id="imgColumn">
                 <img src="../assets/AuntyJensAssets/AJSign.jpg"
-                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="30%">
+                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box">
                 <img src="../assets/AuntyJensAssets/AJPitchWhite.jpg"
-                    alt="Aunty Jen's pitch board in white with three logos" width="30%">
+                    alt="Aunty Jen's pitch board in white with three logos" width="80%">
                 <img src="../assets/AuntyJensAssets/AJPitchBlack.jpg"
-                    alt="Aunty Jen's pitch board in black with three logos" width="30%">
+                    alt="Aunty Jen's pitch board in black with three logos" width="80%">
                 <img src="../assets/AuntyJensAssets/AJMoodboard.png"
-                    alt="Aunty Jen's mood board with multiple images of branding examples on it" width="30%">
+                    alt="Aunty Jen's mood board with multiple images of branding examples on it" width="80%">
                 <img src="../assets/AuntyJensAssets/AJPitchAssets.jpg"
-                    alt="Aunty Jen's pitch assets with info such as fonts and color palettes" width="30%">
+                    alt="Aunty Jen's pitch assets with info such as fonts and color palettes" width="80%">
             </div>
         </article>
     </div>
@@ -75,6 +78,41 @@ export default {
 </script>
 
 <style scoped>
+#blackBar {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+
+#brandTitle {
+    font-family: 'NeueHaasUnicaPro-Black';
+    font-size: 30px;
+}
+
+#imgColumn {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#imgColumn>img {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titleUnderline {
+    text-decoration: underline;
+}
+
+#pageBackground {
+    background-color: #EAE5DE;
+    height: 100%;
+}
+
 #pizzaBackground {
     background-image: url(@/assets/AuntyJensAssets/HandsGrabbingPizza.jpg);
     width: 100%;
@@ -97,4 +135,5 @@ export default {
     justify-items: center;
     align-items: center;
     padding-top: 15vh;
-}</style>
+}
+</style>
