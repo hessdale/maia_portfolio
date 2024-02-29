@@ -20,13 +20,13 @@
             </div>
             <div>
                 <img src="../assets/AuntyJensAssets/AJSign.jpg"
-                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="40%">
+                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="80%">
             </div>
         </article>
         <article class="column2">
             <div>
                 <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
-                    alt="green pizza box with an icon of a green woman and a pizza box on it" width="40%">
+                    alt="green pizza box with an icon of a green woman and a pizza box on it" width="80%">
             </div>
             <article>
                 <div>
@@ -44,8 +44,8 @@
             </article>
         </article>
         <div id="blackBar"></div>
-        <article class="column2">
-            <div>
+        <article id="branding">
+            <div id="follow">
                 <h1 id="brandTitle">BRANDING</h1>
                 <p>Bright and eye-catching! This rebrand takes
                     the “Aunty Jen” character used in their
@@ -59,13 +59,13 @@
                 <img src="../assets/AuntyJensAssets/AJSign.jpg"
                     alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box">
                 <img src="../assets/AuntyJensAssets/AJPitchWhite.jpg"
-                    alt="Aunty Jen's pitch board in white with three logos" width="80%">
+                    alt="Aunty Jen's pitch board in white with three logos">
                 <img src="../assets/AuntyJensAssets/AJPitchBlack.jpg"
-                    alt="Aunty Jen's pitch board in black with three logos" width="80%">
+                    alt="Aunty Jen's pitch board in black with three logos">
                 <img src="../assets/AuntyJensAssets/AJMoodboard.png"
-                    alt="Aunty Jen's mood board with multiple images of branding examples on it" width="80%">
+                    alt="Aunty Jen's mood board with multiple images of branding examples on it">
                 <img src="../assets/AuntyJensAssets/AJPitchAssets.jpg"
-                    alt="Aunty Jen's pitch assets with info such as fonts and color palettes" width="80%">
+                    alt="Aunty Jen's pitch assets with info such as fonts and color palettes">
             </div>
         </article>
     </div>
@@ -78,6 +78,17 @@ export default {
 </script>
 
 <style scoped>
+#branding {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#follow {
+    position: sticky;
+    height: 300px;
+    top: 0;
+}
+
 #blackBar {
     background-color: black;
     height: 1px;
@@ -92,6 +103,7 @@ export default {
 #imgColumn {
     display: grid;
     grid-template-columns: 1fr;
+    margin-bottom: 200px;
 }
 
 #imgColumn>img {
