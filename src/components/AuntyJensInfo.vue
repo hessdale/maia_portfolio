@@ -28,7 +28,7 @@
                 <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
                     alt="green pizza box with an icon of a green woman and a pizza box on it" width="80%">
             </div>
-            <article>
+            <article class="column2">
                 <div>
                     <h2 class="titleUnderline">DELIVERABLES</h2>
                     <p>- Brand Identity</p>
@@ -38,7 +38,7 @@
                 <div>
                     <h2 class="titleUnderline">INDUSTRY</h2>
                     <p>Food & Beverages</p>
-                    <h2>LOCATION</h2>
+                    <h2 class="titleUnderline">LOCATION</h2>
                     <p>Vancouver, BC</p>
                 </div>
             </article>
@@ -87,6 +87,7 @@ export default {
     position: sticky;
     height: 300px;
     top: 0;
+    margin-top: 50px;
 }
 
 #blackBar {
@@ -114,10 +115,19 @@ export default {
 .column2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .titleUnderline {
     text-decoration: underline;
+    text-align: start;
+    font-size: 15px;
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
+.titleUnderline>p {
+    text-align: start;
 }
 
 #pageBackground {

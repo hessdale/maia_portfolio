@@ -9,12 +9,14 @@
   font-family: 'NeueHaasUnicaPro-Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
-h1,p{
+
+h1,
+p {
   margin: 0;
 }
+
 nav {
   padding: 30px;
 
@@ -30,5 +32,4 @@ nav {
 
 body {
   margin: 0;
-}
-</style>
+}</style>
