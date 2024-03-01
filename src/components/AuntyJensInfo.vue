@@ -18,17 +18,13 @@
                     eye-catching edge to take advantage of foot
                     traffic. </p>
             </div>
-            <div>
-                <img src="../assets/AuntyJensAssets/AJSign.jpg"
-                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="80%">
-            </div>
+            <img src="../assets/AuntyJensAssets/AJSign.jpg"
+                alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="80%">
         </article>
-        <article class="column2">
-            <div>
-                <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
-                    alt="green pizza box with an icon of a green woman and a pizza box on it" width="80%">
-            </div>
-            <article class="column2">
+        <article id="deliverables">
+            <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
+                alt="green pizza box with an icon of a green woman and a pizza box on it" width="80%">
+            <article>
                 <div>
                     <h2 class="titleUnderline">DELIVERABLES</h2>
                     <p>- Brand Identity</p>
@@ -78,6 +74,21 @@ export default {
 </script>
 
 <style scoped>
+#deliverables {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#deliverables>img {
+    padding-left: 10%;
+
+}
+
+#deliverables>article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 #branding {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,7 +128,10 @@ export default {
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
     margin-bottom: 30px;
+    justify-items: center;
+    align-items: center;
 }
+
 
 .titleUnderline {
     text-decoration: underline;
