@@ -77,10 +77,12 @@ export default {
 #deliverables {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+
 }
 
 #deliverables>img {
-    padding-left: 10%;
+    margin-left: 10%;
 
 }
 
@@ -96,8 +98,8 @@ export default {
 
 #follow {
     position: sticky;
-    height: 300px;
-    top: 0;
+    height: 600px;
+    top: 150px;
     margin-top: 50px;
 }
 
