@@ -97,6 +97,23 @@
                     alt="small child popping bubbles and woman behind her is wearing blue ruby jewelry">
             </div>
         </div>
+        <div class="blackLine"></div>
+        <div id="videos">
+            <article id="videosArticle">
+                <h1 class="articleTitle">Videos</h1>
+                <p>For web bannersand social media use, video
+                    served as a powerful medium to showcase not
+                    only the products, but the story being told by
+                    seasonal collectionsand edits.</p>
+            </article>
+            <div>
+                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
+                    alt="placeholder gifs for styling waiting on client response for videos">
+                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
+                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
+                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
+            </div>
+        </div>
     </div>
 </template>
 
