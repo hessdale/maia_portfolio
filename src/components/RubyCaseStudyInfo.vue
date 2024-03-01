@@ -73,6 +73,30 @@
                     alt="wrapping paper with brand icons">
             </div>
         </div>
+        <div class="blackLine"></div>
+        <div id="photography">
+            <article>
+                <h1>Photography</h1>
+                <p>With such a broad selection of products,
+                    imagesthat showcase stylinginspirationwere
+                    crucialto show the infinite possibilities of Blue
+                    Ruby’s unique andsubstantial selection.</p>
+            </article>
+            <div id="photographyImages">
+                <img src="../assets/BlueRubyAssets/Photography/Friends.jpg"
+                    alt="people with their arms around each other wearing blue ruby jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/Fruit_Bowl.jpg"
+                    alt="hand grabbing at fruit in a fruit bowl wearing blue ruby jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/Purple_Shirt.jpg"
+                    alt="woman wearing a purple shirt wearing multiple bracelets and necklaces from blue ruby jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/Gold_Chains.jpg"
+                    alt="woman wearing a black cardigan and gold chains from blue ruby jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/Red_Shirt.jpg"
+                    alt="woman wearing a red shirt and wearing multiple necklaces and rings from blue ruby jewelry ">
+                <img src="../assets/BlueRubyAssets/Photography/Popping_Bubbles.jpg"
+                    alt="small child popping bubbles and woman behind her is wearing blue ruby jewelry">
+            </div>
+        </div>
     </div>
 </template>
 
@@ -83,6 +107,16 @@ export default {
 </script>
 
 <style scoped>
+#photography {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+#photographyImages>img {
+    width: 80%;
+}
+
 #packagingDesign {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -148,5 +182,4 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     height: 35vh;
-}
-</style>
+}</style>
