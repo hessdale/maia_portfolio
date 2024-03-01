@@ -54,7 +54,7 @@
         </div>
         <div class="blackLine"></div>
         <div id="packagingDesign">
-            <article>
+            <article id="packagingArticle">
                 <h1>Packaging Design</h1>
                 <p>Beautiful products deserve beautiful
                     packaging.For BlueRuby’s packaging, we
@@ -75,7 +75,7 @@
         </div>
         <div class="blackLine"></div>
         <div id="photography">
-            <article>
+            <article id="photographyArticle">
                 <h1>Photography</h1>
                 <p>With such a broad selection of products,
                     imagesthat showcase stylinginspirationwere
@@ -107,6 +107,12 @@ export default {
 </script>
 
 <style scoped>
+#photographyArticle {
+    position: sticky;
+    top: 150px;
+    height: 300px;
+}
+
 #photography {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -115,6 +121,12 @@ export default {
 
 #photographyImages>img {
     width: 80%;
+}
+
+#packagingArticle {
+    position: sticky;
+    top: 150px;
+    height: 300px;
 }
 
 #packagingDesign {
@@ -182,4 +194,5 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     height: 35vh;
-}</style>
+}
+</style>
