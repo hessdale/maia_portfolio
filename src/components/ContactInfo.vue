@@ -19,7 +19,7 @@
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" id="emailInput">
+                    <input class="decoration" type="text" id="EmailInput">
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
@@ -27,11 +27,11 @@
                 </div>
             </div>
             <div id="note">
-                <input class="decoration" type="text" id="noteInput">
+                <input class="decoration" type="text" id="NoteInput">
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
-                <button id="buttonDecoration">Submit</button>
+                <button @click="submitForm()" id="buttonDecoration">Submit</button>
                 <div></div>
             </div>
         </div>
@@ -40,6 +40,16 @@
 
 <script>
 export default {
+    methods: {
+        submitForm() {
+            let FirstNameInput = document.getElementById("FirstnameInput").value
+            let LastNameInput = document.getElementById("LastNameInput").value
+            let EmailInput = document.getElementById("EmailInput").value
+            FirstNameInput
+            LastNameInput
+            EmailInput
+        }
+    },
 
 }
 </script>
