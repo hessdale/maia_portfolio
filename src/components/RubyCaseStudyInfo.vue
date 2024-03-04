@@ -25,7 +25,9 @@
                     to create modern solutions that resonated with
                     their history and future goals.</p>
             </article>
-            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="Woman wearing a red shirt and jewelry">
+            <div>
+                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg" alt="Woman wearing a red shirt and jewelry">
+            </div>
         </div>
 
 
@@ -132,11 +134,15 @@ export default {
     font-family: 'NeueHaasUnicaPro-Black';
 }
 
-#BlueRubyInfo>img {
-    width: 80%;
+#BlueRubyInfo>div {
     display: grid;
     justify-items: center;
     align-items: center;
+}
+
+#BlueRubyInfo>div>img {
+    width: 80%;
+
 }
 
 #videos {
@@ -224,7 +230,6 @@ export default {
 #RubyInfoTitle {
     text-decoration: underline;
     font-family: 'NeueHaasUnicaPro-Black';
-    margin-left: ;
 }
 
 #BlueRubyInfo {
