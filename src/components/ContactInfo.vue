@@ -39,6 +39,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
     methods: {
         submitForm() {
@@ -48,6 +49,15 @@ export default {
             FirstNameInput
             LastNameInput
             EmailInput
+            axios.request({
+                url: `${process.env.VUE_APP_BASE_DOMAIN}/api/contact-form`,
+                method: `POST`,
+            }).then((response) => {
+                console.log(response)
+            }).catch((error) => {
+                console.log(error)
+
+            })
         }
     },
 
