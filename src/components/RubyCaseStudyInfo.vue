@@ -16,6 +16,8 @@
                     10 locations in and around Vancouver, Blue Ruby
                     has solidified itself as a long-time supporter and
                     member of the community.
+                </p>
+                <p>
                     I joined the Blue Ruby team during their first full
                     rebrand since inception. Seeking updated
                     imagery and packaging, I took a leading role in
@@ -23,16 +25,13 @@
                     to create modern solutions that resonated with
                     their history and future goals.</p>
             </article>
-            <div>
-                <img src="../assets/BlueRubyAssets/Photography/Red_Shirt.jpg" alt="Woman wearing a red shirt and jewelry"
-                    width="200vw">
-            </div>
+            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="Woman wearing a red shirt and jewelry">
         </div>
 
 
         <div id="BlueRubyInfo2">
             <div>
-                <img src="../assets/BlueRubyAssets/Photography/Red_Shirt.jpg" width="200vw">
+                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" width="200vw">
             </div>
             <article>
                 <h3 class="underline">DELIVERABLES</h3>
@@ -55,7 +54,7 @@
         <div class="blackLine"></div>
         <div id="packagingDesign">
             <article id="packagingArticle">
-                <h1>Packaging Design</h1>
+                <h1 class="articleTitle">Packaging Design</h1>
                 <p>Beautiful products deserve beautiful
                     packaging.For BlueRuby’s packaging, we
                     usedtheir signature navy to build a product
@@ -76,7 +75,7 @@
         <div class="blackLine"></div>
         <div id="photography">
             <article id="photographyArticle">
-                <h1>Photography</h1>
+                <h1 class="articleTitle">Photography</h1>
                 <p>With such a broad selection of products,
                     imagesthat showcase stylinginspirationwere
                     crucialto show the infinite possibilities of Blue
@@ -106,7 +105,7 @@
                     only the products, but the story being told by
                     seasonal collectionsand edits.</p>
             </article>
-            <div>
+            <div id="videosContent">
                 <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
                     alt="placeholder gifs for styling waiting on client response for videos">
                 <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
@@ -124,10 +123,37 @@ export default {
 </script>
 
 <style scoped>
+.articleTitle {
+    font-size: 35px;
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
+#BlueRubyInfo>img {
+    width: 80%;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+#videosArticle {
+    position: sticky;
+    top: 150px;
+    height: 300px;
+    margin: 8%;
+}
+
+#videosContent>img {
+    width: 80%;
+}
+
 #photographyArticle {
     position: sticky;
     top: 150px;
     height: 300px;
+    margin: 8%;
 }
 
 #photography {
@@ -144,6 +170,7 @@ export default {
     position: sticky;
     top: 150px;
     height: 300px;
+    margin: 8%;
 }
 
 #packagingDesign {
@@ -188,6 +215,7 @@ export default {
     grid-template-columns: 1fr 1fr;
     padding-top: 20px;
     text-align: start;
+    justify-items: center;
 }
 
 #Center {
