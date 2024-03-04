@@ -10,14 +10,14 @@
         <div id="BlueRubyInfo">
             <article>
                 <h3 id="RubyInfoTitle">BLUE RUBY JEWELRY</h3>
-                <p>For over 25 years, Blue Ruby Jewellery has been
+                <p id="margin">For over 25 years, Blue Ruby Jewellery has been
                     providing Vancouver with the largest selection of
                     both locally and globally designed jewellery. With
                     10 locations in and around Vancouver, Blue Ruby
                     has solidified itself as a long-time supporter and
                     member of the community.
                 </p>
-                <p>
+                <p id="margin">
                     I joined the Blue Ruby team during their first full
                     rebrand since inception. Seeking updated
                     imagery and packaging, I took a leading role in
@@ -44,11 +44,11 @@
             </article>
             <article>
                 <h3 class="underline">INDUSTRY</h3>
-                <p>Ecommerce + Retail</p>
+                <p class="textCenter">Ecommerce + Retail</p>
                 <h3 class="underline">LOCATION</h3>
-                <p>Vancouver,BC</p>
+                <p class="textCenter">Vancouver,BC</p>
                 <h3 class="underline">WEBSITE</h3>
-                <a target="_blank" href="http://blueruby.com">Visit Site</a>
+                <a id="link" target="_blank" href="http://blueruby.com">Visit Site</a>
             </article>
         </div>
         <div class="blackLine"></div>
@@ -123,6 +123,10 @@ export default {
 </script>
 
 <style scoped>
+#margin {
+    margin-bottom: 10px;
+}
+
 .articleTitle {
     font-size: 35px;
     font-family: 'NeueHaasUnicaPro-Black';
@@ -130,6 +134,9 @@ export default {
 
 #BlueRubyInfo>img {
     width: 80%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 #videos {
@@ -193,21 +200,31 @@ export default {
     background-color: #EAE5DE;
 }
 
+#link {
+    color: black;
+    display: grid;
+    justify-items: start;
+}
+
 .underline {
     text-decoration: underline;
-    text-align: center;
+    text-align: start;
+
 }
+
 
 #BlueRubyInfo2 {
     display: grid;
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 20px;
 }
 
 #RubyInfoTitle {
     text-decoration: underline;
     font-family: 'NeueHaasUnicaPro-Black';
+    margin-left: ;
 }
 
 #BlueRubyInfo {
@@ -216,7 +233,9 @@ export default {
     padding-top: 20px;
     text-align: start;
     justify-items: center;
+    margin: 5%;
 }
+
 
 #Center {
     text-align: center;
