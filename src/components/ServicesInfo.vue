@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div id="pageBackground">
         <div id="doBackground">
-            <h1>What I do.</h1>
+            <div id="textBackground">
+                <h1 id="center">What I do.</h1>
+            </div>
         </div>
         <article>
             <div>
@@ -54,6 +56,27 @@ export default {
 </script>
 
 <style scoped>
+#textBackground {
+    background-color: #EAE5DE;
+    width: 300px;
+    height: 200px;
+}
+
+#pageBackground {
+    background-color: #C72828;
+}
+
+#center {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15vh;
+    font-family: 'NeueHaasUnicaPro-Black';
+    color: #C72828;
+    font-size: 45px;
+}
+
 #doBackground {
     background-image: url(@/assets/ServicesAssets/ServicesHeader.gif);
     width: 100%;
