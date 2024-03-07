@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="pageBackground">
         <div id="about">
             <span id="who">
                 <div id="kid">
@@ -40,6 +40,11 @@ export default {
 </script>
   
 <style scoped>
+#pageBackground {
+    background-color: #C72828;
+    height: 100vh;
+}
+
 #whoKid {
     display: grid;
     justify-items: center;
