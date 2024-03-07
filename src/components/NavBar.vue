@@ -14,11 +14,11 @@
         <span id="HeaderSubMenu">
             <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
-            <div id="CaseStudy">
-                <a class="CaseStudyLink" @click="OpenCase()">Case Studies</a>
-                <img id="SubMenuIcon" @click="OpenCase()" src="../assets/nav-arrow-down.svg" alt="icon arrow down">
-                <img id="SubMenuClose" @click="CloseCase()" src="../assets/xmark.svg" alt="icon to close sub menu">
-            </div>
+
+            <a class="CaseStudyLink" @click="OpenCase()">Case Studies</a>
+            <img id="SubMenuIcon" @click="OpenCase()" src="../assets/nav-arrow-down.svg" alt="icon arrow down">
+            <img id="SubMenuClose" @click="CloseCase()" src="../assets/xmark.svg" alt="icon to close sub menu">
+
             <div id="CaseStudyMenu">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
                 <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
@@ -71,12 +71,12 @@ export default {
 #SubMenuIcon {
     display: grid;
     cursor: pointer;
-    width: 19%;
+    width: 5%;
 }
 
 #SubMenuClose {
     display: none;
-    width: 19%;
+    width: 5%;
     cursor: pointer;
 }
 
@@ -86,7 +86,9 @@ export default {
     text-align: center;
 }
 
+
 .CaseStudyLink {
+    text-align: center;
     text-decoration: none;
     color: #C72828;
     font-size: larger;
@@ -110,6 +112,7 @@ export default {
     display: none;
     justify-items: center;
     background-color: #EAE5DE;
+    text-align: center;
 }
 
 #header {
