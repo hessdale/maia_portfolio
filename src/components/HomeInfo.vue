@@ -255,56 +255,56 @@ export default {
     }
 
     #milk {
-        top: 2vh;
-        left: 13%;
+        top: 10%;
+        left: 16%;
         width: 10%;
     }
 
     #yogurt {
-        top: 17%;
-        left: 33%;
+        top: 9%;
+        left: 35%;
         width: 11%;
     }
 
     #pickles {
-        top: 32%;
-        left: 25%;
+        top: 13.4%;
+        left: 27%;
         width: 8%;
     }
 
     #oj {
-        top: 27%;
-        left: 55%;
+        top: 12.2%;
+        left: 62%;
         width: 8%;
     }
 
     #sardines {
-        top: 53%;
-        left: 13%;
+        top: 20.2%;
+        left: 14.5%;
         width: 12%;
     }
 
     #film {
-        top: 52%;
-        left: 34%;
+        top: 20%;
+        left: 35%;
         width: 8%;
     }
 
     #butter {
-        top: 70%;
-        left: 13%;
+        top: 25%;
+        left: 14%;
         width: 12%;
     }
 
     #mayo {
-        top: 62%;
-        left: 52%;
+        top: 23%;
+        left: 57%;
         width: 7%;
     }
 
     #wine {
-        top: 55%;
-        left: 60%;
+        top: 20.6%;
+        left: 65%;
         width: 7%;
     }
 }
