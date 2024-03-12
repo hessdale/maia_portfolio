@@ -14,11 +14,8 @@
         <span id="HeaderSubMenu">
             <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
-
-            <a class="CaseStudyLink" @click="OpenCase()">Case Studies</a>
-            <img id="SubMenuIcon" @click="OpenCase()" src="../assets/nav-arrow-down.svg" alt="icon arrow down">
-            <img id="SubMenuClose" @click="CloseCase()" src="../assets/xmark.svg" alt="icon to close sub menu">
-
+            <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()">Case Studies</a>
+            <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case Studies</a>
             <div id="CaseStudyMenu">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
                 <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
@@ -48,13 +45,13 @@ export default {
         },
         OpenCase() {
             document.getElementById('CaseStudyMenu').style.display = 'grid';
-            document.getElementById('SubMenuClose').style.display = 'grid';
-            document.getElementById('SubMenuIcon').style.display = 'none';
+            document.getElementById('CaseStudyLinkOpen').style.display = 'none';
+            document.getElementById('CaseStudyLinkClose').style.display = 'grid';
         },
         CloseCase() {
             document.getElementById('CaseStudyMenu').style.display = 'none';
-            document.getElementById('SubMenuClose').style.display = 'none';
-            document.getElementById('SubMenuIcon').style.display = 'grid';
+            document.getElementById('CaseStudyLinkClose').style.display = 'none';
+            document.getElementById('CaseStudyLinkOpen').style.display = 'grid';
         }
     }
 }
@@ -65,18 +62,18 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-    margin-left: 17%;
+
 }
 
 #SubMenuIcon {
     display: grid;
     cursor: pointer;
-    width: 5%;
+    width: 8%;
 }
 
 #SubMenuClose {
     display: none;
-    width: 5%;
+    width: 8%;
     cursor: pointer;
 }
 
