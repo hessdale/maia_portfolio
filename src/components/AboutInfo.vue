@@ -11,14 +11,14 @@
                         with you to create process-driven, result-proven
                         work. Raised in Vancouver, BC, this kid grew to be
                         a designer and photographer with a big brain. Give
-                        her a brief, and she’ll run with it.</p>
+                        her a brief, and she'll run with it.</p>
                 </article>
                 <article id="not">
                     <h1 class="whiteFont" id="Bold">Not a Kid anymore.</h1>
                     <p class="whiteFont">Today, this girl does it all! From photography to
-                        illustrations, she’s a star. Looking for a commercial
+                        illustrations, she's a star. Looking for a commercial
                         photographer for your next project? Updated
-                        branding for your business? She’s got you covered.</p>
+                        branding for your business? She's got you covered.</p>
                 </article>
                 <div id="recent">
                     <img src="../assets/AboutAssets/MaiaAdult.jpg" alt="a recent headshot of Maia">
