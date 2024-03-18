@@ -89,10 +89,11 @@ export default {
 </script>
 
 <style scoped>
-#page{
+#page {
     background-color: #EADDA7;
     height: 100vh;
 }
+
 #milk {
     top: 38.7%;
     left: 43%;
@@ -235,23 +236,18 @@ export default {
     }
 
     #mobileBackground {
-        display: grid;
+        display: block;
         position: relative;
-        top: 4vh;
+        top: 5%;
         left: 5.7%;
         width: 90%;
     }
 
     #openFridge {
-        display: grid;
         position: absolute;
-        top: 3vh;
+        top: 4%;
         left: 0;
         width: 100%;
-    }
-
-    #parent {
-        height: 100%;
     }
 
     #milk {
