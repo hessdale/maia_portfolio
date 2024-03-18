@@ -3,19 +3,20 @@
         <span id="header">
             <span id="logo">
                 <router-link to="/">
-                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="100%">
+                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="80%">
                 </router-link>
             </span>
             <span id="menu">
-                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="100%">
-                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="100%">
+                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="80%">
+                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="80%">
             </span>
         </span>
         <span id="HeaderSubMenu">
             <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
             <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()" @mouseover="OpenCase()">Case Studies</a>
-            <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case Studies</a>
+            <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case
+                Studies</a>
             <div id="CaseStudyMenu" @mouseleave="CloseCase()">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
                 <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
@@ -62,7 +63,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;
-
 }
 
 #SubMenuIcon {
@@ -110,6 +110,7 @@ export default {
     justify-items: center;
     background-color: #EAE5DE;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 #header {
