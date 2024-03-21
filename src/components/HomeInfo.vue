@@ -238,69 +238,69 @@ export default {
     #mobileBackground {
         display: block;
         position: relative;
-        top: 5%;
+        padding-top: 15%;
         left: 5.7%;
         width: 90%;
     }
 
     #openFridge {
         position: absolute;
-        top: 4%;
-        left: 0;
+        top: 9.5%;
+        left: 0.5%;
         width: 100%;
     }
 
     #milk {
-        top: 10%;
-        left: 16%;
+        top: 30%;
+        left: 18%;
         width: 10%;
     }
 
     #yogurt {
-        top: 9%;
-        left: 35%;
+        top: 27%;
+        left: 36%;
         width: 11%;
     }
 
     #pickles {
-        top: 13.4%;
+        top: 40.2%;
         left: 27%;
         width: 8%;
     }
 
     #oj {
-        top: 12.2%;
+        top: 36.2%;
         left: 62%;
         width: 8%;
     }
 
     #sardines {
-        top: 20.2%;
-        left: 14.5%;
+        top: 59.3%;
+        left: 15%;
         width: 12%;
     }
 
     #film {
-        top: 20%;
-        left: 35%;
+        top: 58.5%;
+        left: 36%;
         width: 8%;
     }
 
     #butter {
-        top: 25%;
-        left: 14%;
+        top: 73%;
+        left: 17%;
         width: 12%;
     }
 
     #mayo {
-        top: 23%;
+        top: 67%;
         left: 57%;
         width: 7%;
     }
 
     #wine {
-        top: 20.6%;
-        left: 65%;
+        top: 60%;
+        left: 64%;
         width: 7%;
     }
 }
