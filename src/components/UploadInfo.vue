@@ -22,7 +22,7 @@ export default {
             if (photoType == "designs") {
                 let form = new FormData();
                 form.append("uploaded_image", this.$refs["uploaded_image"]["files"][0]);
-                form.append("image_description", this$refs["image_description"].value)
+                form.append("image_description", this.$refs["image_description"].value)
                 axios.request({
                     url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-image`,
                     method: `POST`,
@@ -37,11 +37,11 @@ export default {
                     console.log(error)
                 })
             } if (photoType == "misc") {
-
+                console.log("misc")
             } if (photoType == "portraits") {
-
+                console.log("portraits")
             } else {
-
+                console.log("error")
             }
         }
     },
