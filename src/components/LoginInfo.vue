@@ -13,14 +13,14 @@ export default {
 
     methods: {
         login() {
-            let username = this.$refs.username[`value`];
-            let password = this.$refs.password[`value`];
+            let username_input = this.$refs.username[`value`];
+            let password_input = this.$refs.password[`value`];
             axios.request({
                 url: `${process.env.VUE_APP_BASE_URL}/api/client-login`,
                 method: `POST`,
                 data: {
-                    username: username,
-                    password: password,
+                    username: username_input,
+                    password: password_input,
                 },
             }).then((response) => {
                 console.log(response)
