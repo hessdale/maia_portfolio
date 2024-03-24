@@ -15,21 +15,24 @@ export default {
         login() {
             let username_input = this.$refs.username[`value`];
             let password_input = this.$refs.password[`value`];
-            axios.request({
-                url: `${process.env.VUE_APP_BASE_URL}/api/client-login`,
-                method: `POST`,
-                data: {
-                    username: username_input,
-                    password: password_input,
-                },
-            }).then((response) => {
-                console.log(response)
-                cookies.set("token", response.data[0].token);
-            }).catch((error) => {
-                console.log(error)
-                console.log("login failed")
-            })
-        }
+            axios
+                .request({
+                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/login-admin`,
+                    method: `POST`,
+                    data: {
+                        username: username_input,
+                        password: password_input,
+                    },
+                })
+                .then((response) => {
+                    cookies.set("token", response.data[0].token);
+
+                    console.log(response);
+                })
+                .catch((error) => {
+                    console.log(error);
+                });
+        },
     },
 }
 </script>
