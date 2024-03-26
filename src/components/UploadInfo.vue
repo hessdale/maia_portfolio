@@ -24,7 +24,7 @@ export default {
                 form.append("uploaded_image", this.$refs["uploaded_image"]["files"][0]);
                 form.append("image_description", this.$refs["image_description"].value)
                 axios.request({
-                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-image`,
+                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-images`,
                     method: `POST`,
                     headers: {
                         "Content-Type": "multipart/form-data",
