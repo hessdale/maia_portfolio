@@ -17,7 +17,7 @@ export default {
             let password_input = this.$refs.password[`value`];
             axios
                 .request({
-                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/login-admin`,
+                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/client-login`,
                     method: `POST`,
                     data: {
                         username: username_input,
@@ -26,7 +26,6 @@ export default {
                 })
                 .then((response) => {
                     cookies.set("token", response.data[0].token);
-
                     console.log(response);
                 })
                 .catch((error) => {
