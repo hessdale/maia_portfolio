@@ -18,11 +18,11 @@ export default {
     methods: {
         addPhoto() {
             let photoType = document.getElementById("type").value;
-            let cookieToken = cookies.get("token")
             if (photoType == "designs") {
                 let form = new FormData();
                 form.append("uploaded_image", this.$refs["uploaded_image"]["files"][0]);
                 form.append("image_description", this.$refs["image_description"].value)
+                let cookieToken = cookies.get("token")
                 axios.request({
                     url: `${process.env.VUE_APP_BASE_DOMAIN}/api/design-images`,
                     method: `POST`,
@@ -41,7 +41,7 @@ export default {
             } if (photoType == "portraits") {
                 console.log("portraits")
             } else {
-                console.log("error")
+                console.log("error please select photo type")
             }
         }
     },
