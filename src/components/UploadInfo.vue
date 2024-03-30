@@ -55,7 +55,23 @@ export default {
                     console.log(error)
                 })
             } if (photoType == "portraits") {
-                console.log("portraits")
+                let form = new FormData();
+                form.append("uploaded_image", this.$refs["uploaded_image"]["files"][0]);
+                form.append("image_description", this.$refs["image_description"].value)
+                let cookieToken = cookies.get("token")
+                axios.request({
+                    url: `${process.env.VUE_APP_BASE_DOMAIN}/api/portrait-images`,
+                    method: `POST`,
+                    headers: {
+                        "Content-Type": "multipart/form-data",
+                        token: cookieToken
+                    },
+                    data: form,
+                }).then((response) => {
+                    console.log(response)
+                }).catch((error) => {
+                    console.log(error)
+                })
             }
         },
     }
