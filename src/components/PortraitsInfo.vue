@@ -7,10 +7,9 @@
                 </p>
             </article>
             <span id="images">
-                <img src="../assets/PortraitsAssets/arrow-left.svg" alt="icon left arrow">
-                <img src="../assets/PortraitsAssets/JewelryPortrait.jpeg" alt="portrait of a model wearing necklaces"
-                    width="450px">
-                <img src="../assets/PortraitsAssets/arrow-right.svg" alt="icon right arrow">
+                <div v-for="(photo, i) in photos" :key="i">
+                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
+                </div>
             </span>
         </div>
     </div>
@@ -18,10 +17,17 @@
 
 <script>
 import axios from "axios";
+
 export default {
+    methods: {
+        getImageUrl(file_name) {
+            let image_location = require("../../../maia_backend/images/" + file_name)
+            return image_location
+        },
+    },
     data() {
         return {
-            photos: undefined
+            photos: undefined,
         }
     },
     mounted() {
@@ -36,10 +42,15 @@ export default {
             console.log("failed")
         })
     },
+
 }
 </script>
 
 <style scoped>
+.arrow {
+    cursor: pointer;
+}
+
 #background {
     background-color: #C72828;
 }
@@ -52,5 +63,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    justify-items: center;
 }
 </style>
