@@ -14,10 +14,10 @@
         <span id="HeaderSubMenu">
             <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
-            <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()" @mouseover="OpenCase()">Case Studies</a>
+            <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()">Case Studies</a>
             <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case
                 Studies</a>
-            <div id="CaseStudyMenu" @mouseleave="CloseCase()">
+            <div id="CaseStudyMenu" @click="CloseCase()">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
                 <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
             </div>
