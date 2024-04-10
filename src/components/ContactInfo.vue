@@ -1,10 +1,10 @@
 <template>
     <div id="pageBackground">
         <div id="info">
-            <h1 class="whiteText">Let's make it happen!</h1>
-            <p class="whiteText">Fill out this quick form or send an email and let’s
+            <h1 class="whiteText" id="formTitle">Let's make it happen!</h1>
+            <p class="whiteText" id="formInfo">Fill out this quick form or send an email and let’s
                 get talking. I look forward to working with you!</p>
-            <a id="email" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
+            <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
         <div id="form">
             <div id="name">
@@ -26,8 +26,9 @@
 
                 </div>
             </div>
+
             <div id="note">
-                <input class="decoration" type="text" id="NoteInput">
+                <textarea class="decoration" type="text" id="NoteInput" rows="10" cols="47"></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
@@ -85,9 +86,9 @@ export default {
     height: 30px;
 }
 
+
 #noteInput {
-    width: 380px;
-    height: 200px;
+    width: 300em;
 }
 
 #email {
@@ -117,6 +118,13 @@ export default {
     color: #EAE5DE;
 }
 
+#emailLink {
+    text-decoration: none;
+    color: #EAE5DE;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
 .decoration {
     text-decoration: none;
     background-color: #C72828;
@@ -143,5 +151,16 @@ export default {
 #pageBackground {
     background-color: #C72828;
     height: 100vh;
+}
+
+#formTitle {
+    text-align: center;
+    font-family: 'NeueHaasUnicaPro-Black';
+    padding-top: 50px;
+}
+
+#formInfo {
+    text-align: center;
+    width: 350px;
 }
 </style>

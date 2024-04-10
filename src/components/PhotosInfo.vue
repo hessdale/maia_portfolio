@@ -3,11 +3,11 @@
         <div id="background">
             <article id="title">
                 <h1 class="whiteFont">misc. photos</h1>
-                <p class="whiteFont">Images I have taken commercially and creatively of products, animals, bits, and bobs.
+                <p class="whiteFont">Images I have taken commercially and creatively of products, animals, bits, and
+                    bobs.
                 </p>
             </article>
             <span id="images">
-
                 <div v-for="(photo, i) in photos" :key="i">
                     <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
                 </div>
