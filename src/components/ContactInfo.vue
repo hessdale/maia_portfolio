@@ -9,17 +9,17 @@
         <div id="form">
             <div id="name">
                 <div>
-                    <input class="decoration" type="text" id="FirstNameInput">
+                    <input class="decoration" type="text" ref="FirstNameInput">
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" id="LastNameInput">
+                    <input class="decoration" type="text" ref="LastNameInput">
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" id="EmailInput">
+                    <input class="decoration" type="text" ref="EmailInput">
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
@@ -28,7 +28,7 @@
             </div>
 
             <div id="note">
-                <textarea class="decoration" type="text" id="NoteInput" rows="10" cols="47"></textarea>
+                <textarea class="decoration" type="text" ref="NoteInput" rows="10" cols="47"></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
@@ -44,15 +44,19 @@ import axios from 'axios';
 export default {
     methods: {
         submitForm() {
-            let FirstNameInput = document.getElementById("FirstnameInput").value
-            let LastNameInput = document.getElementById("LastNameInput").value
-            let EmailInput = document.getElementById("EmailInput").value
-            FirstNameInput
-            LastNameInput
-            EmailInput
+            let FirstNameInput = this.$refs.FirstNameInput[`value`]
+            let LastNameInput = this.$refs.LastNameInput[`value`]
+            let EmailInput = this.$refs.EmailInput[`value`]
+            let NoteInput = this.$refs.NoteInput[`value`]
             axios.request({
                 url: `${process.env.VUE_APP_BASE_DOMAIN}/api/contact-form`,
                 method: `POST`,
+                data: {
+                    FirstName: FirstNameInput,
+                    LastName: LastNameInput,
+                    Email: EmailInput,
+                    Note: NoteInput
+                }
             }).then((response) => {
                 console.log(response)
             }).catch((error) => {
