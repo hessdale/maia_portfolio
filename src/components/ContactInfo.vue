@@ -6,7 +6,7 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <div id="form">
+        <div id="form" ref="form">
             <div id="name">
                 <div>
                     <input class="decoration" type="text" ref="FirstNameInput">
@@ -36,18 +36,42 @@
                 <div></div>
             </div>
         </div>
+        <form ref="form" @submit.prevent="sendEmail">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+        <button @click="sendEmail()">send</button>
     </div>
 </template>
 
 <script>
 import axios from 'axios';
+import emailjs from '@emailjs/browser';
 export default {
     methods: {
+        sendEmail() {
+            emailjs.sendForm('service_thuxw1n', 'template_vml69zi', this.$refs.form, {
+                publicKey: 'PxmR9ZRAcf3SX3wx8'
+            }).then(
+                () => {
+                    console.log('success!!');
+                },
+                (error) => {
+                    console.log('failed', error)
+                },
+            );
+        },
         submitForm() {
             let FirstNameInput = this.$refs.FirstNameInput[`value`]
             let LastNameInput = this.$refs.LastNameInput[`value`]
             let EmailInput = this.$refs.EmailInput[`value`]
             let NoteInput = this.$refs.NoteInput[`value`]
+
             axios.request({
                 url: `${process.env.VUE_APP_BASE_DOMAIN}/api/contact-form`,
                 method: `POST`,
