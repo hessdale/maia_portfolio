@@ -6,7 +6,7 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <form ref="form" @submit.prevent="sendEmail">
+        <form id="form" ref="form" @submit.prevent="sendEmail">
             <div id="name">
                 <div>
                     <input class="decoration" type="text" name="user_name" ref="FirstNameInput">
@@ -34,14 +34,6 @@
                 <div></div>
             </div>
         </form>
-        <!-- <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-        <button @click="sendEmail()">send</button> -->
     </div>
 </template>
 
