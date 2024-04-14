@@ -6,46 +6,42 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <div id="form" ref="form">
+        <form ref="form" @submit.prevent="sendEmail">
             <div id="name">
                 <div>
-                    <input class="decoration" type="text" ref="FirstNameInput">
+                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput">
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" ref="LastNameInput">
+                    <input class="decoration" type="text" name="LastNameInput" ref="LastNameInput">
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" ref="EmailInput">
+                    <input class="decoration" type="text" name="user_email" ref="EmailInput">
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
-
                 </div>
             </div>
-
             <div id="note">
-                <textarea class="decoration" type="text" ref="NoteInput" rows="10" cols="47"></textarea>
+                <textarea class="decoration" type="text" name="message" ref="NoteInput" rows="10" cols="47"></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
                 <button @click="submitForm()" id="buttonDecoration">Submit</button>
                 <div></div>
             </div>
-        </div>
-        <form ref="form" @submit.prevent="sendEmail">
-            <label>Name</label>
-            <input type="text" name="user_name">
-            <label>Email</label>
-            <input type="email" name="user_email">
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
         </form>
-        <button @click="sendEmail()">send</button>
+        <!-- <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+        <button @click="sendEmail()">send</button> -->
     </div>
 </template>
 
@@ -54,24 +50,13 @@ import axios from 'axios';
 import emailjs from '@emailjs/browser';
 export default {
     methods: {
-        sendEmail() {
-            emailjs.sendForm('service_thuxw1n', 'template_vml69zi', this.$refs.form, {
-                publicKey: 'PxmR9ZRAcf3SX3wx8'
-            }).then(
-                () => {
-                    console.log('success!!');
-                },
-                (error) => {
-                    console.log('failed', error)
-                },
-            );
-        },
         submitForm() {
             let FirstNameInput = this.$refs.FirstNameInput[`value`]
             let LastNameInput = this.$refs.LastNameInput[`value`]
             let EmailInput = this.$refs.EmailInput[`value`]
             let NoteInput = this.$refs.NoteInput[`value`]
-
+            let form = this.$refs.form
+            console.log(form)
             axios.request({
                 url: `${process.env.VUE_APP_BASE_DOMAIN}/api/contact-form`,
                 method: `POST`,
@@ -83,6 +68,16 @@ export default {
                 }
             }).then((response) => {
                 console.log(response)
+                emailjs.sendForm('service_thuxw1n', 'template_nxjza0k', this.$refs.form, {
+                    publicKey: 'PxmR9ZRAcf3SX3wx8'
+                }).then(
+                    () => {
+                        console.log('success!!');
+                    },
+                    (error) => {
+                        console.log('failed', error)
+                    },
+                );
             }).catch((error) => {
                 console.log(error)
 
