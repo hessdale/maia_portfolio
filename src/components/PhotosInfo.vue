@@ -57,7 +57,8 @@ export default {
 
 #images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
+    justify-items: center;
 }
 </style>
