@@ -46,10 +46,6 @@ export default {
 </script>
 
 <style scoped>
-.arrow {
-    cursor: pointer;
-}
-
 #background {
     background-color: #C72828;
 }
