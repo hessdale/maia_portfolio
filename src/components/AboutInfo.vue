@@ -32,13 +32,13 @@
         </div>
     </div>
 </template>
-  
+
 <script>
 export default {
 
 }
 </script>
-  
+
 <style scoped>
 #pageBackground {
     background-color: #C72828;
@@ -61,12 +61,11 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
-    padding-top: 5%;
+    background-color: #C72828;
 }
 
 #contact>img {
     width: 100%;
-    padding-top: 5%;
 }
 
 #kid {
@@ -108,6 +107,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
+    background-color: #C72828;
 }
 
 #email {
