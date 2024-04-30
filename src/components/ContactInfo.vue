@@ -13,7 +13,7 @@
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" name="LastNameInput" ref="LastNameInput">
+                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput">
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
