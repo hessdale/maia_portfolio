@@ -3,8 +3,10 @@
         <div id="parent">
             <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png"
                 alt="background of a kitchen with washer and a fridge with a sign above saying click to open my fridge">
-            <img @click="openFridgeMobile()" id="mobileBackground" src="../assets/HomeAssets/FridgeMobileBackground.png"
-                alt="closed fridge icon with no kitchen surrounding it for mobile view">
+            <div id="mobileBackground">
+                <img @click="openFridgeMobile()" id="mobileClose" src="../assets/HomeAssets/FridgeMobileBackground.png"
+                    alt="closed fridge icon with no kitchen surrounding it for mobile view">
+            </div>
             <img @click="closeFridge()" id="openFridge" src="../assets/HomeAssets/FridgeOpen.png"
                 alt="fridge open with icons in it and icons directing to pages">
             <router-link to="/contact">
@@ -90,7 +92,7 @@ export default {
 
 <style scoped>
 #page {
-    background-color: #EADDA7;
+    background-color: #C72828;
     height: 100vh;
 }
 
@@ -208,7 +210,7 @@ export default {
 
 #parent {
     position: relative;
-    background-color: #EADDA7;
+    background-color: #C72828;
 }
 
 #background {
@@ -225,7 +227,7 @@ export default {
     display: none;
 }
 
-#mobileBackground {
+#mobileClose {
     display: none;
     width: 100%;
 }
@@ -236,11 +238,15 @@ export default {
     }
 
     #mobileBackground {
-        display: block;
+        display: grid;
+        justify-items: center;
+    }
+
+    #mobileClose {
+        display: grid;
         position: relative;
-        padding-top: 15%;
-        left: 5.7%;
-        width: 90%;
+        padding-top: 16%;
+        width: 61.5%;
     }
 
     #openFridge {
