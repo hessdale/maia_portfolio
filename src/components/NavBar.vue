@@ -12,20 +12,22 @@
             </span>
         </span>
         <span id="HeaderSubMenu">
-            <router-link class="link" to="/about">About</router-link>
             <router-link class="link" to="/">Home</router-link>
+            <router-link class="link" to="/design">Design</router-link>
+            <router-link class="link" to="/photos">Photography</router-link>
+            <router-link class="link" to="/portraits">Portraits</router-link>
             <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()">Case Studies</a>
             <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case
                 Studies</a>
             <div id="CaseStudyMenu" @click="CloseCase()">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
-                <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's</router-link>
+                <router-link class="CaseStudyLink" to="/blueruby-case-study">Good Grub Skincare</router-link>
+                <router-link class="CaseStudyLink" to="/blueruby-case-study">Sunrise Sugaring</router-link>
+                <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's Pizzaria</router-link>
             </div>
-            <router-link class="link" to="/contact">Contact</router-link>
-            <router-link class="link" to="/design">Design</router-link>
-            <router-link class="link" to="/photos">Photos</router-link>
-            <router-link class="link" to="/portraits">Portraits</router-link>
             <router-link class="link" to="/services">Services</router-link>
+            <router-link class="link" to="/about">About</router-link>
+            <router-link class="link" to="/contact">Contact</router-link>
         </span>
     </div>
 </template>
