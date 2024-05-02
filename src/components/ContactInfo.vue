@@ -151,7 +151,7 @@ export default {
 
 #info {
     display: grid;
-    justify-items: center;
+    justify-content: center;
 }
 
 #form {
