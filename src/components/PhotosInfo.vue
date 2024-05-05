@@ -7,15 +7,10 @@
                     bobs.
                 </p>
             </article>
-            <masonry :cols="3" :gutter="30">
-                <div v-for="(item, index) in items" :key="index">Item: {{ index + 1 }}
-                    <div :style="{ height: `${item}px` }" style="background-color: white;"></div>
-                </div>
-            </masonry>
-            <masonry :cols="3" :gutter="30">
+            <masonry :cols="{ default: 4, 1000: 3, 700: 2, 400: 1 }" :gutter="5">
                 <div v-for="(photo, i) in photos" :key="i">
                     <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
-                        width="200px">
+                        width="250px">
                 </div>
             </masonry>
         </div>
@@ -31,6 +26,7 @@ export default {
             let image_location = require("../../../maia_backend/images/" + file_name)
             return image_location
         },
+
     },
     data() {
         return {
