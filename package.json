@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@yeger/vue2-masonry-wall": "^5.0.10",
     "axios": "^1.6.7",
     "core-js": "^3.8.3",
     "vue": "^2.6.14",

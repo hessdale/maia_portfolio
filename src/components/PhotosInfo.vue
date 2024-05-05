@@ -7,18 +7,26 @@
                     bobs.
                 </p>
             </article>
-            <span id="images">
+            <masonry-wall :items="items" min-columns="3" column-width="100" :gap="16">
+                <template #default="{ item, index }">
+                    <!-- <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px"> -->
+                    <div :style="{ height: `${item}px` }" style="background-color:blue; width: 100px;">
+                        {{ index }}
+                    </div>
+                </template>
+            </masonry-wall>
+            <!-- <span id="images">
                 <div v-for="(photo, i) in photos" :key="i">
                     <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
                 </div>
-
-            </span>
+            </span> -->
         </div>
     </div>
 </template>
 
 <script>
 import axios from "axios";
+import MasonryWall from '@yeger/vue2-masonry-wall';
 export default {
     methods: {
         getImageUrl(file_name) {
@@ -28,7 +36,8 @@ export default {
     },
     data() {
         return {
-            photos: undefined
+            photos: undefined,
+            items: [50, 75, 75, 100, 50, 50, 75, 150, 125, 175, 50, 100, 125]
         }
     },
     mounted() {
@@ -43,6 +52,9 @@ export default {
             console.log("failed")
         })
     },
+    components: {
+        MasonryWall,
+    },
 }
 </script>
 
@@ -55,10 +67,10 @@ export default {
     color: #EAE5DE;
 }
 
-#images {
+/* #images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     justify-items: center;
-}
+} */
 </style>

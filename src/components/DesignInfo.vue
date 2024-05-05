@@ -7,7 +7,8 @@
             </article>
             <span id="images">
                 <div v-for="(photo, i) in photos" :key="i">
-                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
+                    <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
+                        width="200px">
                 </div>
             </span>
         </div>
@@ -54,10 +55,31 @@ export default {
     color: #EAE5DE;
 }
 
+/* #images {
+    column-count: 4;
+    column-gap: 10px;
+}
+
+#images>div {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+#images>div>img {
+    grid-row: 1 / -1;
+    grid-column: 1;
+}
+
+img {
+    max-width: 200px;
+} */
+
 #images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: masonry;
 }
 </style>
