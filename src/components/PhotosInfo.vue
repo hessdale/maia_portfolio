@@ -7,26 +7,24 @@
                     bobs.
                 </p>
             </article>
-            <masonry-wall :items="items" min-columns="3" column-width="100" :gap="16">
-                <template #default="{ item, index }">
-                    <!-- <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px"> -->
-                    <div :style="{ height: `${item}px` }" style="background-color:blue; width: 100px;">
-                        {{ index }}
-                    </div>
-                </template>
-            </masonry-wall>
-            <!-- <span id="images">
-                <div v-for="(photo, i) in photos" :key="i">
-                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
+            <masonry :cols="3" :gutter="30">
+                <div v-for="(item, index) in items" :key="index">Item: {{ index + 1 }}
+                    <div :style="{ height: `${item}px` }" style="background-color: white;"></div>
                 </div>
-            </span> -->
+            </masonry>
+            <masonry :cols="3" :gutter="30">
+                <div v-for="(photo, i) in photos" :key="i">
+                    <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
+                        width="200px">
+                </div>
+            </masonry>
         </div>
     </div>
 </template>
 
 <script>
 import axios from "axios";
-import MasonryWall from '@yeger/vue2-masonry-wall';
+
 export default {
     methods: {
         getImageUrl(file_name) {
@@ -51,9 +49,6 @@ export default {
             console.log(error)
             console.log("failed")
         })
-    },
-    components: {
-        MasonryWall,
     },
 }
 </script>

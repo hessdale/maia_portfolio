@@ -2,10 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './assets/sass/style.scss'
-import MasonryWall from '@yeger/vue2-masonry-wall'
+import VueMasonry from 'vue-masonry-css'
 
-Vue.use(MasonryWall)
-
+Vue.use(VueMasonry);
 
 Vue.config.productionTip = false
 
