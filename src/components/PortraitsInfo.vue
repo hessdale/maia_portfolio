@@ -6,10 +6,10 @@
                 <p class="whiteFont">Portraits I have taken commercially and creatively
                 </p>
             </article>
-            <masonry :cols="{ default: 4, 1000: 3, 700: 2, 400: 1 }" :gutter="5">
+            <masonry :cols="{ default: 4, 1000: 3, 700: 2, 400: 1 }" :gutter="{ default: '30px', 700: '15px' }">
                 <div v-for="(photo, i) in photos" :key="i">
                     <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
-                        width="250px">
+                        width="90%">
                 </div>
             </masonry>
         </div>
