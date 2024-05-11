@@ -48,22 +48,23 @@ export default {
 </script>
 
 <style scoped>
-.arrow {
-    cursor: pointer;
-}
-
 #background {
     background-color: #C72828;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .whiteFont {
     color: #EAE5DE;
 }
 
-#images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    align-items: center;
-    justify-items: center;
+#title {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#title>h1 {
+    font-family: 'NeueHaasUnicaPro-Black';
+    font-size: xx-large;
 }
 </style>
