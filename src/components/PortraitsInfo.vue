@@ -6,11 +6,12 @@
                 <p class="whiteFont">Portraits I have taken commercially and creatively
                 </p>
             </article>
-            <span id="images">
+            <masonry :cols="{ default: 4, 1000: 3, 700: 2, 400: 1 }" :gutter="5">
                 <div v-for="(photo, i) in photos" :key="i">
-                    <img :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i" width="400px">
+                    <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
+                        width="250px">
                 </div>
-            </span>
+            </masonry>
         </div>
     </div>
 </template>
