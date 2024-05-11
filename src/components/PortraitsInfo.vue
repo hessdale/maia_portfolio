@@ -52,6 +52,7 @@ export default {
     background-color: #C72828;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .whiteFont {
