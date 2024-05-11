@@ -5,12 +5,12 @@
                 <h1 class="whiteFont">design</h1>
                 <p class="whiteFont">Pieces In have designed for use accross print, web, and social media.</p>
             </article>
-            <span id="images">
+            <masonry :cols="{ default: 4, 1000: 3, 700: 2, 400: 1 }" :gutter="5">
                 <div v-for="(photo, i) in photos" :key="i">
                     <img :key="i" :src="getImageUrl(photo[`file`])" :alt="photo[`image_description`]" :id="i"
-                        width="200px">
+                        width="250px">
                 </div>
-            </span>
+            </masonry>
         </div>
     </div>
 </template>
@@ -80,6 +80,5 @@ img {
 #images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: masonry;
 }
 </style>
