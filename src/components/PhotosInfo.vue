@@ -2,7 +2,7 @@
     <div>
         <div id="background">
             <article id="title">
-                <h1 class="whiteFont">misc. photos</h1>
+                <h1 class="whiteFont">photos</h1>
                 <p class="whiteFont">Images I have taken commercially and creatively of products, animals, bits, and
                     bobs.
                 </p>
@@ -19,7 +19,6 @@
 
 <script>
 import axios from "axios";
-
 export default {
     methods: {
         getImageUrl(file_name) {
@@ -31,7 +30,6 @@ export default {
     data() {
         return {
             photos: undefined,
-            items: [50, 75, 75, 100, 50, 50, 75, 150, 125, 175, 50, 100, 125]
         }
     },
     mounted() {
@@ -52,16 +50,21 @@ export default {
 <style scoped>
 #background {
     background-color: #C72828;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .whiteFont {
     color: #EAE5DE;
 }
 
-/* #images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    align-items: center;
-    justify-items: center;
-} */
+#title {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#title>h1 {
+    font-family: 'NeueHaasUnicaPro-Black';
+    font-size: xx-large;
+}
 </style>
