@@ -48,36 +48,21 @@ export default {
 <style scoped>
 #background {
     background-color: #C72828;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .whiteFont {
     color: #EAE5DE;
 }
 
-/* #images {
-    column-count: 4;
-    column-gap: 10px;
+#title {
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
-#images>div {
-    margin: 0;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    margin-bottom: 10px;
-    break-inside: avoid;
-}
-
-#images>div>img {
-    grid-row: 1 / -1;
-    grid-column: 1;
-}
-
-img {
-    max-width: 200px;
-} */
-
-#images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+#title>h1 {
+    font-family: 'NeueHaasUnicaPro-Black';
+    font-size: xx-large;
 }
 </style>
