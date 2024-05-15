@@ -2,7 +2,7 @@
   <div>
     <nav-bar></nav-bar>
     <about-info></about-info>
-    footer-bar
+    <footer-bar></footer-bar>
   </div>
 </template>
 

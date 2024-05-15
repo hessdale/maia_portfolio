@@ -9,24 +9,25 @@
         <form id="form" ref="form" @submit.prevent="sendEmail">
             <div id="name">
                 <div>
-                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput">
+                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput" maxlength="150">
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput">
+                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput" maxlength="150">
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" name="user_email" ref="EmailInput">
+                    <input class="decoration" type="text" name="user_email" ref="EmailInput" maxlength="200">
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
                 </div>
             </div>
             <div id="note">
-                <textarea class="decoration" type="text" name="message" ref="NoteInput" rows="10" cols="47"></textarea>
+                <textarea class="decoration" type="text" name="message" ref="NoteInput" rows="10" cols="47"
+                    maxlength="2000"></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
