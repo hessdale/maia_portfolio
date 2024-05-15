@@ -1,7 +1,7 @@
 <template>
     <div>
         <input type="file" ref="uploaded_image">
-        <input type="text" ref="image_description" placeholder="description of photo">
+        <input type="text" ref="image_description" placeholder="description of photo" maxlength="100">
         <select name="photo type" id="type">
             <option value="designs">Design</option>
             <option value="misc">Misc</option>
