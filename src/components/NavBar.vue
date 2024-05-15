@@ -3,12 +3,14 @@
         <span id="header">
             <span id="logo">
                 <router-link to="/">
-                    <img src="../assets/MH_Logo.png" alt="logo that says maia hadfield" width="80%">
+                    <img src="../assets/NavAssets/MH_Logo.png" alt="logo that says maia hadfield" width="80%">
                 </router-link>
             </span>
             <span id="menu">
-                <img id="MenuIcon" @click="OpenMenu()" src="../assets/HamburgerMenu.svg" alt="menu icon" width="80%">
-                <img id="CloseIcon" @click="CloseMenu()" src="../assets/xmark.svg" alt="icon to close menu" width="80%">
+                <img id="MenuIcon" @click="OpenMenu()" src="../assets/NavAssets/HamburgerMenu.svg" alt="menu icon"
+                    width="80%">
+                <img id="CloseIcon" @click="CloseMenu()" src="../assets/NavAssets/xmark.svg" alt="icon to close menu"
+                    width="80%">
             </span>
         </span>
         <span id="HeaderSubMenu">
@@ -55,7 +57,7 @@ export default {
             document.getElementById('CaseStudyMenu').style.display = 'none';
             document.getElementById('CaseStudyLinkClose').style.display = 'none';
             document.getElementById('CaseStudyLinkOpen').style.display = 'grid';
-        }
+        },
     }
 }
 </script>
