@@ -6,6 +6,10 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Contact Successful!
+        </div>
         <form id="form" ref="form" @submit.prevent="sendEmail">
             <div id="name">
                 <div>
@@ -178,5 +182,31 @@ export default {
 #formInfo {
     text-align: center;
     width: 350px;
+}
+
+.alert {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #3eeb46;
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
 }
 </style>
