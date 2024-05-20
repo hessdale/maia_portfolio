@@ -6,24 +6,26 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <div class="alert">
-            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <div id="alert">
+            <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             Contact Successful!
         </div>
         <form id="form" ref="form" @submit.prevent="sendEmail">
             <div id="name">
                 <div>
-                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput" maxlength="150">
+                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput" maxlength="150"
+                        required>
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput" maxlength="150">
+                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput" maxlength="150"
+                        required>
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" name="user_email" ref="EmailInput" maxlength="200">
+                    <input class="decoration" type="text" name="user_email" ref="EmailInput" maxlength="200" required>
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
@@ -31,7 +33,7 @@
             </div>
             <div id="note">
                 <textarea class="decoration" type="text" name="message" ref="NoteInput" rows="10" cols="47"
-                    maxlength="2000"></textarea>
+                    maxlength="2000" required></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
@@ -70,6 +72,7 @@ export default {
                 }).then(
                     () => {
                         console.log('success!!');
+                        document.getElementById('alert').style.display = 'block';
                     },
                     (error) => {
                         console.log('failed', error)
@@ -184,18 +187,15 @@ export default {
     width: 350px;
 }
 
-.alert {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+#alert {
+    display: none;
     padding: 20px;
     background-color: #3eeb46;
     color: white;
     margin-bottom: 15px;
-
 }
 
-.closebtn {
+#closebtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
