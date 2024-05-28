@@ -6,39 +6,38 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <div id="alert">
-            <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-            Contact Successful!
-        </div>
-        <form id="form" ref="form" @submit.prevent="sendEmail">
+        <form id="form" ref="form" @submit.prevent="submitForm">
             <div id="name">
                 <div>
-                    <input class="decoration" type="text" name="user_name" ref="FirstNameInput" maxlength="150"
+                    <input class="decoration" type="text" ref="FirstNameInput" maxlength="150" autocomplete="given-name"
                         required>
                     <p class="whiteText">First Name</p>
                 </div>
                 <div>
-                    <input class="decoration" type="text" name="user_last_name" ref="LastNameInput" maxlength="150"
+                    <input class="decoration" type="text" ref="LastNameInput" maxlength="150" autocomplete="family-name"
                         required>
                     <p class="whiteText">Last Name</p>
                 </div>
             </div>
             <div id="email">
                 <div>
-                    <input class="decoration" type="text" name="user_email" ref="EmailInput" maxlength="200" required>
+                    <input class="decoration" type="email" ref="EmailInput" maxlength="200" required>
                     <p class="whiteText">Email</p>
                 </div>
                 <div id="empty">
                 </div>
             </div>
             <div id="note">
-                <textarea class="decoration" type="text" name="message" ref="NoteInput" rows="10" cols="47"
-                    maxlength="2000" required></textarea>
+                <textarea class="decoration" type="text" ref="NoteInput" rows="10" cols="47" maxlength="2000"
+                    required></textarea>
                 <p class="whiteText">Note</p>
             </div>
             <div id="button">
-                <button @click="submitForm()" id="buttonDecoration">Submit</button>
-                <div></div>
+                <input id="buttonDecoration" type="submit" value="Submit" />
+                <div id="alert">
+                    <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    Contact Successful!
+                </div>
             </div>
         </form>
     </div>
@@ -54,8 +53,6 @@ export default {
             let LastNameInput = this.$refs.LastNameInput[`value`]
             let EmailInput = this.$refs.EmailInput[`value`]
             let NoteInput = this.$refs.NoteInput[`value`]
-            let form = this.$refs.form
-            console.log(form)
             axios.request({
                 url: `${process.env.VUE_APP_BASE_DOMAIN}/api/contact-form`,
                 method: `POST`,
@@ -80,7 +77,6 @@ export default {
                 );
             }).catch((error) => {
                 console.log(error)
-
             })
         }
     },
@@ -92,10 +88,12 @@ export default {
 #button {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    justify-items: stretch;
     align-items: center;
-    width: 650px;
-    margin-top: 20px;
+}
+
+#button>input {
+    margin-top: 10px;
 }
 
 #buttonDecoration {
@@ -188,11 +186,10 @@ export default {
 }
 
 #alert {
-    display: none;
-    padding: 20px;
+    /* display: none; */
+    padding: 10px;
     background-color: #3eeb46;
     color: white;
-    margin-bottom: 15px;
 }
 
 #closebtn {
