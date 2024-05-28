@@ -10,27 +10,28 @@
             <form ref="form" @submit.prevent="submitForm">
                 <div id="name">
                     <div>
-                        <input class="decoration" type="text" ref="FirstNameInput" maxlength="150"
+                        <input class="decoration" name="user_name" type="text" ref="FirstNameInput" maxlength="150"
                             autocomplete="given-name" required>
                         <p class="whiteText">First Name</p>
                     </div>
                     <div>
-                        <input class="decoration" type="text" ref="LastNameInput" maxlength="150"
+                        <input class="decoration" name="user_last_name" type="text" ref="LastNameInput" maxlength="150"
                             autocomplete="family-name" required>
                         <p class="whiteText">Last Name</p>
                     </div>
                 </div>
                 <div id="email">
                     <div>
-                        <input class="decoration" type="email" ref="EmailInput" maxlength="200" required>
+                        <input class="decoration" name="user_email" autocomplete="email" ref="EmailInput"
+                            maxlength="200" required>
                         <p class="whiteText">Email</p>
                     </div>
                     <div id="empty">
                     </div>
                 </div>
                 <div id="note">
-                    <input class="decoration" ref="NoteInput" textarea="auto" maxlength="2000" autocomplete="off"
-                        required>
+                    <textarea class="decoration" name="message" ref="NoteInput" textarea="auto" maxlength="2000"
+                        autocomplete="off" required rows="6"></textarea>
                     <p class="whiteText">Note</p>
                 </div>
                 <div id="button">
@@ -95,7 +96,7 @@ export default {
 }
 
 #button>input {
-    margin-top: 10px;
+    margin: 10px;
 }
 
 #buttonDecoration {
@@ -125,10 +126,6 @@ export default {
 
 #name>div {
     margin: 10px;
-}
-
-#name>div>input {
-    width: 100%;
 }
 
 #email>div {
@@ -165,7 +162,6 @@ export default {
 #form {
     display: grid;
     justify-items: center;
-    width: 70%;
 }
 
 .whiteText {
@@ -189,7 +185,7 @@ export default {
 }
 
 #alert {
-    /* display: none; */
+    display: none;
     padding: 10px;
     background-color: #3eeb46;
     color: white;
@@ -212,5 +208,25 @@ export default {
 
 #note {
     margin: 10px;
+}
+
+#note>textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+@media only screen and (max-width: 425px) {
+    #name {
+        grid-template-columns: 1fr;
+    }
+
+    #email {
+        grid-template-columns: 1fr;
+    }
+
+    #form>form {
+        width: 100%;
+    }
 }
 </style>
