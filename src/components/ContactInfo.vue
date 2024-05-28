@@ -6,40 +6,42 @@
                 get talking. I look forward to working with you!</p>
             <a id="emailLink" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
         </div>
-        <form id="form" ref="form" @submit.prevent="submitForm">
-            <div id="name">
-                <div>
-                    <input class="decoration" type="text" ref="FirstNameInput" maxlength="150" autocomplete="given-name"
+        <div id="form">
+            <form ref="form" @submit.prevent="submitForm">
+                <div id="name">
+                    <div>
+                        <input class="decoration" type="text" ref="FirstNameInput" maxlength="150"
+                            autocomplete="given-name" required>
+                        <p class="whiteText">First Name</p>
+                    </div>
+                    <div>
+                        <input class="decoration" type="text" ref="LastNameInput" maxlength="150"
+                            autocomplete="family-name" required>
+                        <p class="whiteText">Last Name</p>
+                    </div>
+                </div>
+                <div id="email">
+                    <div>
+                        <input class="decoration" type="email" ref="EmailInput" maxlength="200" required>
+                        <p class="whiteText">Email</p>
+                    </div>
+                    <div id="empty">
+                    </div>
+                </div>
+                <div id="note">
+                    <input class="decoration" ref="NoteInput" textarea="auto" maxlength="2000" autocomplete="off"
                         required>
-                    <p class="whiteText">First Name</p>
+                    <p class="whiteText">Note</p>
                 </div>
-                <div>
-                    <input class="decoration" type="text" ref="LastNameInput" maxlength="150" autocomplete="family-name"
-                        required>
-                    <p class="whiteText">Last Name</p>
+                <div id="button">
+                    <input id="buttonDecoration" type="submit" value="Submit" />
+                    <div id="alert">
+                        <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        Contact Successful!
+                    </div>
                 </div>
-            </div>
-            <div id="email">
-                <div>
-                    <input class="decoration" type="email" ref="EmailInput" maxlength="200" required>
-                    <p class="whiteText">Email</p>
-                </div>
-                <div id="empty">
-                </div>
-            </div>
-            <div id="note">
-                <textarea class="decoration" type="text" ref="NoteInput" rows="10" cols="47" maxlength="2000"
-                    required></textarea>
-                <p class="whiteText">Note</p>
-            </div>
-            <div id="button">
-                <input id="buttonDecoration" type="submit" value="Submit" />
-                <div id="alert">
-                    <span id="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                    Contact Successful!
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </template>
 
@@ -107,11 +109,6 @@ export default {
     height: 30px;
 }
 
-
-#noteInput {
-    width: 300em;
-}
-
 #email {
     display: grid;
     justify-items: center;
@@ -128,6 +125,10 @@ export default {
 
 #name>div {
     margin: 10px;
+}
+
+#name>div>input {
+    width: 100%;
 }
 
 #email>div {
@@ -158,11 +159,13 @@ export default {
 #info {
     display: grid;
     justify-content: center;
+    justify-items: center;
 }
 
 #form {
     display: grid;
     justify-items: center;
+    width: 70%;
 }
 
 .whiteText {
@@ -205,5 +208,9 @@ export default {
 
 .closebtn:hover {
     color: black;
+}
+
+#note {
+    margin: 10px;
 }
 </style>
