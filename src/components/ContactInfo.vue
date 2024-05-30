@@ -126,6 +126,7 @@ export default {
 
 #name>div {
     margin: 10px;
+
 }
 
 #email>div {
@@ -181,7 +182,7 @@ export default {
 
 #formInfo {
     text-align: center;
-    width: 350px;
+    width: 60%;
 }
 
 #alert {
@@ -219,14 +220,30 @@ export default {
 @media only screen and (max-width: 425px) {
     #name {
         grid-template-columns: 1fr;
+        justify-items: normal;
     }
 
     #email {
         grid-template-columns: 1fr;
+        justify-items: normal;
     }
 
     #form>form {
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #name>div {
+        width: 100%;
+    }
+
+    #email>div {
+        width: 100%;
+    }
+
+    .decoration {
+        width: 90%;
     }
 }
 </style>
