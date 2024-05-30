@@ -121,19 +121,19 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #EAE5DE;
-    padding: 3%;
+    padding: 10px;
 }
 
 #logo {
     display: grid;
-    width: 35%;
+    width: 125px;
     align-content: center;
 }
 
 #menu {
     display: grid;
     cursor: pointer;
-    width: 7%;
+    width: 30px;
     align-content: center;
     margin-left: 90%;
 }
