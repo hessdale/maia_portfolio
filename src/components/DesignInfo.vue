@@ -65,6 +65,10 @@ export default {
 
 #title>h1 {
     font-family: 'NeueHaasUnicaPro-Black';
-    font-size: xx-large;
+    font-size: 40px;
+}
+
+#title>p {
+    font-size: 14px;
 }
 </style>
