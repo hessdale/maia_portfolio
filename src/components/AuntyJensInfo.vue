@@ -18,26 +18,46 @@
                     eye-catching edge to take advantage of foot
                     traffic. </p>
             </div>
-            <img src="../assets/AuntyJensAssets/AJSign.jpg"
-                alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box" width="80%">
+            <div id="pizzaSign">
+                <img src="../assets/AuntyJensAssets/AJSign.jpg"
+                    alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box">
+            </div>
         </article>
-        <article id="deliverables">
-            <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
-                alt="green pizza box with an icon of a green woman and a pizza box on it" width="80%">
-            <article>
+        <article id="mobile">
+            <div id="deliverables">
                 <div>
                     <h2 class="titleUnderline">DELIVERABLES</h2>
-                    <p>- Brand Identity</p>
-                    <p>- Moodboarding</p>
-                    <p>- Signage Design</p>
+                    <p class="mobileFont">- Brand Identity</p>
+                    <p class="mobileFont">- Moodboarding</p>
+                    <p class="mobileFont">- Signage Design</p>
                 </div>
                 <div>
                     <h2 class="titleUnderline">INDUSTRY</h2>
-                    <p>Food & Beverages</p>
+                    <p class="mobileFont">Food & Beverages</p>
                     <h2 class="titleUnderline">LOCATION</h2>
-                    <p>Vancouver, BC</p>
+                    <p class="mobileFont">Vancouver, BC</p>
                 </div>
-            </article>
+            </div>
+        </article>
+        <div id="boxImage">
+            <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
+                alt="green pizza box with an icon of a green woman and a pizza box on it">
+        </div>
+        <article class="desktop" id="deliverables">
+
+            <div>
+                <h2 class="titleUnderline">DELIVERABLES</h2>
+                <p>- Brand Identity</p>
+                <p>- Moodboarding</p>
+                <p>- Signage Design</p>
+            </div>
+            <div>
+                <h2 class="titleUnderline">INDUSTRY</h2>
+                <p>Food & Beverages</p>
+                <h2 class="titleUnderline">LOCATION</h2>
+                <p>Vancouver, BC</p>
+            </div>
+
         </article>
         <div id="blackBar"></div>
         <article id="branding">
@@ -48,8 +68,8 @@
                     current logo and gives her a modern twist.
                     Classic and timeless pizzeria imagery is
                     balanced with modern typefaces and
-                    colours to create unique branding that’s
-                    just as perfect as their ‘za!</p>
+                    colours to create unique branding that's
+                    just as perfect as their 'za!</p>
             </div>
             <div id="imgColumn">
                 <img src="../assets/AuntyJensAssets/AJSign.jpg"
@@ -74,21 +94,20 @@ export default {
 </script>
 
 <style scoped>
+#mobile {
+    display: none;
+}
+
 #deliverables {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
     margin-bottom: 50px;
-
 }
 
 #deliverables>img {
     margin-left: 10%;
 
-}
-
-#deliverables>article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 #branding {
@@ -134,7 +153,6 @@ export default {
     align-items: center;
 }
 
-
 .titleUnderline {
     text-decoration: underline;
     text-align: start;
@@ -175,22 +193,75 @@ export default {
     padding-top: 15vh;
 }
 
+#pizzaSign {
+    display: grid;
+    justify-items: center;
+}
+
+#boxImage {
+    display: grid;
+    justify-items: center;
+}
+
+#pizzaSign>img {
+    width: 80%;
+}
+
+#boxImage>img {
+    width: 80%;
+}
+
 @media screen and (max-width :600px) {
-    .column2 {
-        grid-template-columns: 1fr;
+    #pizzaSign>img {
+        width: 100%;
+    }
+
+    #boxImage>img {
+        width: 100%;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: grid;
     }
 
     #deliverables {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .titleUnderline {
+        font-size: calc(100% + 2vw);
+    }
+
+    .mobileFont {
+        font-size: 4.5vw;
+    }
+
+    .column2 {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     #follow {
         position: static;
         height: 100%;
+        text-align: center;
     }
 
     #branding {
         grid-template-columns: 1fr;
+    }
+
+    #imgColumn {
+        justify-items: center;
+    }
+
+    #imgColumn>img {
+        width: 100%;
     }
 }
 </style>
