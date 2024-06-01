@@ -8,13 +8,13 @@
         <article class="column2">
             <div>
                 <h2 class="titleUnderline">AUNTY JEN'S PIZZARIA</h2>
-                <p>A commercial drive staple, Aunty Jen’s Pizzeria is
+                <p>A commercial drive staple, Aunty Jen's Pizzeria is
                     a prized location for 1AM pizza runs. With
                     Commercial Drive growing as a popular spot for
                     vintage shopping, good eats, and photo ops,
-                    we’re seeing rebrands become more popular
+                    we're seeing rebrands become more popular
                     amongst classic businesses.
-                    This rebrand would give Aunty Jen’s Pizzeria an
+                    This rebrand would give Aunty Jen's Pizzeria an
                     eye-catching edge to take advantage of foot
                     traffic. </p>
             </div>
@@ -138,7 +138,7 @@ export default {
 .titleUnderline {
     text-decoration: underline;
     text-align: start;
-    font-size: 15px;
+    font-size: calc(100% + .2vw);
     font-family: 'NeueHaasUnicaPro-Black';
 }
 
@@ -173,5 +173,24 @@ export default {
     justify-items: center;
     align-items: center;
     padding-top: 15vh;
+}
+
+@media screen and (max-width :600px) {
+    .column2 {
+        grid-template-columns: 1fr;
+    }
+
+    #deliverables {
+        grid-template-columns: 1fr;
+    }
+
+    #follow {
+        position: static;
+        height: 100%;
+    }
+
+    #branding {
+        grid-template-columns: 1fr;
+    }
 }
 </style>
