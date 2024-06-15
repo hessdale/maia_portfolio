@@ -6,17 +6,19 @@
             </div>
         </div>
         <article class="column2">
-            <div>
-                <h2 class="titleUnderline">AUNTY JEN'S PIZZARIA</h2>
+            <div id="auntyInfo">
+                <h2 id="auntySubTitle">AUNTY JEN'S PIZZARIA</h2>
                 <p>A commercial drive staple, Aunty Jen's Pizzeria is
                     a prized location for 1AM pizza runs. With
                     Commercial Drive growing as a popular spot for
                     vintage shopping, good eats, and photo ops,
                     we're seeing rebrands become more popular
                     amongst classic businesses.
-                    This rebrand would give Aunty Jen's Pizzeria an
+                </p>
+                <p>This rebrand would give Aunty Jen's Pizzeria an
                     eye-catching edge to take advantage of foot
-                    traffic. </p>
+                    traffic.</p>
+
             </div>
             <div id="pizzaSign">
                 <img src="../assets/AuntyJensAssets/AJSign.jpg"
@@ -160,6 +162,13 @@ export default {
     font-family: 'NeueHaasUnicaPro-Black';
 }
 
+#auntySubTitle {
+    text-decoration: underline;
+    text-align: start;
+    font-size: calc(100% + 1vw);
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
 .titleUnderline>p {
     text-align: start;
 }
@@ -179,7 +188,7 @@ export default {
 
 #auntyTitle {
     font-family: 'NeueHaasUnicaPro-Black';
-    color: #EAE5DE;
+    color: black;
     position: absolute;
     font-size: 40px;
     text-align: center;
@@ -262,6 +271,18 @@ export default {
 
     #imgColumn>img {
         width: 100%;
+    }
+
+    #auntySubTitle {
+        text-align: center;
+        font-size: calc(100% + 2vw);
+    }
+
+    #auntyInfo>p {
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: calc(100% + 1vw);
     }
 }
 </style>
