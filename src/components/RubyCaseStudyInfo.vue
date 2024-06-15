@@ -10,14 +10,14 @@
         <div id="BlueRubyInfo">
             <article>
                 <h3 id="RubyInfoTitle">BLUE RUBY JEWELRY</h3>
-                <p id="margin">For over 25 years, Blue Ruby Jewellery has been
+                <p id="RubySubInfo">For over 25 years, Blue Ruby Jewellery has been
                     providing Vancouver with the largest selection of
                     both locally and globally designed jewellery. With
                     10 locations in and around Vancouver, Blue Ruby
                     has solidified itself as a long-time supporter and
                     member of the community.
                 </p>
-                <p id="margin">
+                <p id="RubySubInfo">
                     I joined the Blue Ruby team during their first full
                     rebrand since inception. Seeking updated
                     imagery and packaging, I took a leading role in
@@ -26,7 +26,8 @@
                     their history and future goals.</p>
             </article>
             <div>
-                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg" alt="Woman wearing a red shirt and jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg"
+                    alt="Woman wearing a red shirt and jewelry">
             </div>
         </div>
 
@@ -125,10 +126,6 @@ export default {
 </script>
 
 <style scoped>
-#margin {
-    margin-bottom: 10px;
-}
-
 .articleTitle {
     font-size: 35px;
     font-family: 'NeueHaasUnicaPro-Black';
@@ -142,7 +139,6 @@ export default {
 
 #BlueRubyInfo>div>img {
     width: 80%;
-
 }
 
 #videos {
@@ -218,7 +214,6 @@ export default {
 
 }
 
-
 #BlueRubyInfo2 {
     display: grid;
     justify-items: center;
@@ -263,5 +258,26 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     height: 35vh;
+}
+
+@media screen and (max-width :600px) {
+    #BlueRubyInfo {
+        grid-template-columns: 1fr;
+    }
+
+    #RubyInfoTitle {
+        text-align: center;
+        font-size: calc(100% + 2vw);
+    }
+
+    #RubySubInfo {
+        font-size: calc(100% + 1.5vw);
+        margin: 20px;
+        text-align: center;
+    }
+
+    #BlueRubyInfo>div>img {
+        width: 100%;
+    }
 }
 </style>
