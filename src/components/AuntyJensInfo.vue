@@ -64,7 +64,7 @@
         <div id="blackBar"></div>
         <article id="branding">
             <div id="follow">
-                <h1 id="brandTitle">BRANDING</h1>
+                <h1 id="brandTitle">Branding</h1>
                 <p>Bright and eye-catching! This rebrand takes
                     the “Aunty Jen” character used in their
                     current logo and gives her a modern twist.
@@ -283,6 +283,17 @@ export default {
         margin-left: 30px;
         margin-right: 30px;
         font-size: calc(100% + 1vw);
+    }
+
+    #brandTitle {
+        font-size: calc(100% + 5vw);
+    }
+
+    #follow>p {
+        font-size: calc(100% + 1vw);
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 }
 </style>
