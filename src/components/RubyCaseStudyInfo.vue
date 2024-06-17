@@ -3,13 +3,13 @@
 
         <div id="VideoBackground">
             <span id="Center">
-                <h1 id="Rubytitle">Blue Ruby Jewelry</h1>
+                <h1 id="Rubytitle">Blue Ruby Jewellery</h1>
             </span>
         </div>
 
         <div id="BlueRubyInfo">
             <article>
-                <h3 id="RubyInfoTitle">BLUE RUBY JEWELRY</h3>
+                <h3 id="RubyInfoTitle">BLUE RUBY JEWELLERY</h3>
                 <p id="RubySubInfo">For over 25 years, Blue Ruby Jewellery has been
                     providing Vancouver with the largest selection of
                     both locally and globally designed jewellery. With
@@ -30,35 +30,37 @@
                     alt="Woman wearing a red shirt and jewelry">
             </div>
         </div>
-
-
         <div id="BlueRubyInfo2">
-            <div>
-                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" width="200vw">
+            <div id="desktopDisplay">
+                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
             </div>
             <article>
                 <h3 class="underline">DELIVERABLES</h3>
-                <p>- Packaging Design</p>
-                <p>- Lifestyle Photography</p>
-                <p>- Product Photography</p>
-                <p>- Content Creation + Strategy</p>
-                <p>- Newsletter Campaigns</p>
-                <p>- Campaign Art Direction</p>
+                <p class="smallScale">- Packaging Design</p>
+                <p class="smallScale">- Lifestyle Photography</p>
+                <p class="smallScale">- Product Photography</p>
+                <p class="smallScale">- Content Creation + Strategy</p>
+                <p class="smallScale">- Newsletter Campaigns</p>
+                <p class="smallScale">- Campaign Art Direction</p>
             </article>
             <article>
                 <h3 class="underline">INDUSTRY</h3>
-                <p class="textCenter">Ecommerce + Retail</p>
+                <p class="smallScale">Ecommerce + Retail</p>
                 <h3 class="underline">LOCATION</h3>
-                <p class="textCenter">Vancouver,BC</p>
+                <p class="smallScale">Vancouver,BC</p>
                 <h3 class="underline">WEBSITE</h3>
                 <a id="link" target="_blank" href="http://blueruby.com">Visit Site</a>
             </article>
+
+        </div>
+        <div id="mobileDisplay">
+            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
         </div>
         <div class="blackLine"></div>
         <div id="packagingDesign">
             <article id="packagingArticle">
                 <h1 class="articleTitle">Packaging Design</h1>
-                <p>Beautiful products deserve beautiful
+                <p class="fontScale">Beautiful products deserve beautiful
                     packaging.For BlueRuby’s packaging, we
                     usedtheir signature navy to build a product
                     that feels luxurious but subduedenough to
@@ -79,10 +81,10 @@
         <div id="photography">
             <article id="photographyArticle">
                 <h1 class="articleTitle">Photography</h1>
-                <p>With such a broad selection of products,
-                    imagesthat showcase stylinginspirationwere
-                    crucialto show the infinite possibilities of Blue
-                    Ruby’s unique andsubstantial selection.</p>
+                <p class="fontScale">With such a broad selection of products,
+                    imagesthat showcase styling inspiration were
+                    crucial to show the infinite possibilities of Blue
+                    Ruby's unique and substantial selection.</p>
             </article>
             <div id="photographyImages">
                 <img src="../assets/BlueRubyAssets/Photography/Friends.jpg"
@@ -103,17 +105,20 @@
         <div id="videos">
             <article id="videosArticle">
                 <h1 class="articleTitle">Videos</h1>
-                <p>For web bannersand social media use, video
+                <p class="fontScale">For web banners and social media use, video
                     served as a powerful medium to showcase not
                     only the products, but the story being told by
-                    seasonal collectionsand edits.</p>
+                    seasonal collections and edits.</p>
             </article>
             <div id="videosContent">
+                <img src="../assets/BlueRubyAssets/Videos/BannerVideo.gif"
+                    alt="a gif of twomodels in a pool with blue ruby jewellery eating fruit">
                 <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
-                    alt="placeholder gifs for styling waiting on client response for videos">
-                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
-                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
-                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif" alt="">
+                    alt="a gif of two models in front of gray back drop wearing blue ruby jewellery">
+                <img src="../assets/BlueRubyAssets/Videos/MomVideo.gif"
+                    alt="a gif of families modelling blue ruby jewellery in front of a gray back drop">
+                <img src="../assets/BlueRubyAssets/Videos/PearlsVideo.gif"
+                    alt="three gifs of models wearing blue ruby pearls">
             </div>
         </div>
     </div>
@@ -126,6 +131,10 @@ export default {
 </script>
 
 <style scoped>
+#mobileDisplay {
+    display: none;
+}
+
 .articleTitle {
     font-size: 35px;
     font-family: 'NeueHaasUnicaPro-Black';
@@ -278,6 +287,100 @@ export default {
 
     #BlueRubyInfo>div>img {
         width: 100%;
+    }
+
+    #desktopDisplay {
+        display: none;
+    }
+
+    #mobileDisplay {
+        display: grid;
+        padding-bottom: 70px;
+    }
+
+    #mobileDisplay>img {
+        width: 100%;
+    }
+
+    #BlueRubyInfo2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #packagingDesign {
+        grid-template-columns: 1fr;
+    }
+
+    #packagingArticle {
+        position: relative;
+        top: 0;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #packagingImages>img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #photography {
+        grid-template-columns: 1fr;
+    }
+
+    #photographyArticle {
+        position: relative;
+        top: 0;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #photographyImages>img {
+        width: 100%;
+        margin-bottom: 25px
+    }
+
+    #videos {
+        grid-template-columns: 1fr;
+    }
+
+    #videosArticle {
+        position: relative;
+        top: 0;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #videosContent>img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .articleTitle {
+        font-size: calc(100% + 5vw);
+        margin-bottom: 20px;
+    }
+
+    .fontScale {
+        font-size: calc(100% + 1.5vw);
+    }
+
+    .smallScale {
+        font-size: calc(100% + 1vw);
+        margin-bottom: 7px;
+    }
+
+    #BlueRubyInfo2 {
+        margin: 20px;
+    }
+
+    .underline {
+        font-family: 'NeueHaasUnicaPro-Black';
+        font-size: calc(100% + 1vw);
     }
 }
 </style>
