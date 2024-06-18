@@ -272,6 +272,7 @@ export default {
 @media screen and (max-width :600px) {
     #BlueRubyInfo {
         grid-template-columns: 1fr;
+        margin: 0;
     }
 
     #RubyInfoTitle {
