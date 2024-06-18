@@ -2,36 +2,34 @@
     <div id="pageBackground">
         <div id="VideoBackground">
             <span id="Center">
-                <h1 id="Rubytitle">Blue Ruby Jewellery</h1>
+                <h1>Good Grub</h1>
             </span>
         </div>
-
-        <div id="BlueRubyInfo">
+        <div id="GoodGrubInfo">
             <article>
-                <h3 id="RubyInfoTitle">BLUE RUBY JEWELLERY</h3>
-                <p id="RubySubInfo">For over 25 years, Blue Ruby Jewellery has been
-                    providing Vancouver with the largest selection of
-                    both locally and globally designed jewellery. With
-                    10 locations in and around Vancouver, Blue Ruby
-                    has solidified itself as a long-time supporter and
-                    member of the community.
+                <h3 id="GrubInfoTitle">GOOD GRUB</h3>
+                <p id="GrubSubInfo">With Good Grub, skincare isn't just a routine—it's
+                    a deliciously delightful experience! This brand is
+                    all about celebrating the joy of skincare, infused
+                    with a playful personality and a commitment to
+                    plant-based goodness. Say hello to your new
+                    skincare bestie, suitable for all skin types, ages,
+                    and genders.
                 </p>
-                <p id="RubySubInfo">
-                    I joined the Blue Ruby team during their first full
-                    rebrand since inception. Seeking updated
-                    imagery and packaging, I took a leading role in
-                    collaboratively designing with the Blue Ruby team
-                    to create modern solutions that resonated with
-                    their history and future goals.</p>
+                <p id="GrubSubInfo">
+                    Good Grub believes in the power of nature to
+                    nourish and rejuvenate. That's why each product
+                    is packed with the finest plant-based ingredients,
+                    carefully selected to feed your skin with the love it
+                    deserves.</p>
             </article>
             <div>
-                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg"
-                    alt="Woman wearing a red shirt and jewelry">
+                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg" alt="placeholder">
             </div>
         </div>
-        <div id="BlueRubyInfo2">
+        <div id="GoodGrubInfo2">
             <div id="desktopDisplay">
-                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
+                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="placeholder">
             </div>
             <article>
                 <h3 class="underline">DELIVERABLES</h3>
@@ -48,16 +46,16 @@
                 <h3 class="underline">LOCATION</h3>
                 <p class="smallScale">Vancouver,BC</p>
                 <h3 class="underline">WEBSITE</h3>
-                <a id="link" target="_blank" href="http://blueruby.com">Visit Site</a>
+                <a id="link" target="_blank" href="http://blueruby.com">Change link to good grub</a>
             </article>
 
         </div>
         <div id="mobileDisplay">
-            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
+            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="placeholder">
         </div>
         <div class="blackLine"></div>
-        <div id="packagingDesign">
-            <article id="packagingArticle">
+        <div id="BrandingDesign">
+            <article id="BrandingArticle">
                 <h1 class="articleTitle">Packaging Design</h1>
                 <p class="fontScale">Beautiful products deserve beautiful
                     packaging.For BlueRuby’s packaging, we
@@ -65,7 +63,7 @@
                     that feels luxurious but subduedenough to
                     accentuate thebeauty of each item.</p>
             </article>
-            <div id="packagingImages">
+            <div id="BrandingImages">
                 <img src="../assets/BlueRubyAssets/Packaging Designs/JewelleryPackagingDesign_Photography.jpg"
                     alt="floating jewelry boxes and jewlery bags with the words blue ruby embossed on them">
                 <img src="../assets/BlueRubyAssets/Packaging Designs/Jewellery-Box-Bag-and-Gift-Card.jpg"
@@ -76,50 +74,6 @@
                     alt="wrapping paper with brand icons">
             </div>
         </div>
-        <div class="blackLine"></div>
-        <div id="photography">
-            <article id="photographyArticle">
-                <h1 class="articleTitle">Photography</h1>
-                <p class="fontScale">With such a broad selection of products,
-                    imagesthat showcase styling inspiration were
-                    crucial to show the infinite possibilities of Blue
-                    Ruby's unique and substantial selection.</p>
-            </article>
-            <div id="photographyImages">
-                <img src="../assets/BlueRubyAssets/Photography/Friends.jpg"
-                    alt="people with their arms around each other wearing blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Fruit_Bowl.jpg"
-                    alt="hand grabbing at fruit in a fruit bowl wearing blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Purple_Shirt.jpg"
-                    alt="woman wearing a purple shirt wearing multiple bracelets and necklaces from blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Gold_Chains.jpg"
-                    alt="woman wearing a black cardigan and gold chains from blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Red_Shirt.jpg"
-                    alt="woman wearing a red shirt and wearing multiple necklaces and rings from blue ruby jewelry ">
-                <img src="../assets/BlueRubyAssets/Photography/Popping_Bubbles.jpg"
-                    alt="small child popping bubbles and woman behind her is wearing blue ruby jewelry">
-            </div>
-        </div>
-        <div class="blackLine"></div>
-        <div id="videos">
-            <article id="videosArticle">
-                <h1 class="articleTitle">Videos</h1>
-                <p class="fontScale">For web banners and social media use, video
-                    served as a powerful medium to showcase not
-                    only the products, but the story being told by
-                    seasonal collections and edits.</p>
-            </article>
-            <div id="videosContent">
-                <img src="../assets/BlueRubyAssets/Videos/BannerVideo.gif"
-                    alt="a gif of twomodels in a pool with blue ruby jewellery eating fruit">
-                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
-                    alt="a gif of two models in front of gray back drop wearing blue ruby jewellery">
-                <img src="../assets/BlueRubyAssets/Videos/MomVideo.gif"
-                    alt="a gif of families modelling blue ruby jewellery in front of a gray back drop">
-                <img src="../assets/BlueRubyAssets/Videos/PearlsVideo.gif"
-                    alt="three gifs of models wearing blue ruby pearls">
-            </div>
-        </div>
     </div>
 </template>
 
@@ -128,5 +82,172 @@ export default {
 
 }
 </script>
+<style scoped>
+#mobileDisplay {
+    display: none;
+}
 
-<style scoped></style>
+.articleTitle {
+    font-size: 35px;
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
+#GoodGrubInfo>div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#GoodGrubInfo>div>img {
+    width: 80%;
+}
+
+#BrandingArticle {
+    position: sticky;
+    top: 150px;
+    height: 300px;
+    margin: 8%;
+}
+
+#BrandingDesign {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+#BrandingImages>img {
+    width: 80%;
+}
+
+.blackLine {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+}
+
+#pageBackground {
+    background-color: #EAE5DE;
+}
+
+#link {
+    color: black;
+    display: grid;
+    justify-items: start;
+}
+
+.underline {
+    text-decoration: underline;
+    text-align: start;
+
+}
+
+#GrubInfoTitle {
+    text-decoration: underline;
+    font-family: 'NeueHaasUnicaPro-Black';
+}
+
+#GoodGrubInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    text-align: start;
+    justify-items: center;
+    margin: 5%;
+}
+
+
+#Center {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+#Grubtitle {
+    font-family: 'NeueHaasUnicaPro-Black';
+    color: #EAE5DE;
+    position: absolute;
+    font-size: 45px;
+}
+
+#VideoBackground {
+    background-image: url(@/assets/BlueRubyAssets/Videos/Essentials_Banner.gif);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+}
+
+@media screen and (max-width :600px) {
+    #GoodGrubInfo {
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    #GoodInfoTitle {
+        text-align: center;
+        font-size: calc(100% + 2vw);
+    }
+
+    #GoodSubInfo {
+        font-size: calc(100% + 1.5vw);
+        margin: 20px;
+        text-align: center;
+    }
+
+    #GoodGrubInfo>div>img {
+        width: 100%;
+    }
+
+    #desktopDisplay {
+        display: none;
+    }
+
+    #mobileDisplay {
+        display: grid;
+        padding-bottom: 70px;
+    }
+
+    #mobileDisplay>img {
+        width: 100%;
+    }
+
+    #BrandingDesign {
+        grid-template-columns: 1fr;
+    }
+
+    #BrandingArticle {
+        position: relative;
+        top: 0;
+        height: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #BrandingImages>img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .articleTitle {
+        font-size: calc(100% + 5vw);
+        margin-bottom: 20px;
+    }
+
+    .fontScale {
+        font-size: calc(100% + 1.5vw);
+    }
+
+    .smallScale {
+        font-size: calc(100% + 1vw);
+        margin-bottom: 7px;
+    }
+
+    .underline {
+        font-family: 'NeueHaasUnicaPro-Black';
+        font-size: calc(100% + 1vw);
+    }
+}
+</style>
