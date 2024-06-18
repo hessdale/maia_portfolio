@@ -23,8 +23,8 @@
                 Studies</a>
             <div id="CaseStudyMenu" @click="CloseCase()">
                 <router-link class="CaseStudyLink" to="/blueruby-case-study">Blue Ruby</router-link>
-                <router-link class="CaseStudyLink" to="/blueruby-case-study">Good Grub Skincare</router-link>
-                <router-link class="CaseStudyLink" to="/blueruby-case-study">Sunrise Sugaring</router-link>
+                <router-link class="CaseStudyLink" to="/good-grub-case-study">Good Grub Skincare</router-link>
+                <router-link class="CaseStudyLink" to="/sunrise-sugaring-case-study">Sunrise Sugaring</router-link>
                 <router-link class="CaseStudyLink" to="/auntyjens-case-study">Aunty Jen's Pizzaria</router-link>
             </div>
             <router-link class="link" to="/services">Services</router-link>

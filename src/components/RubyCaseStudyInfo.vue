@@ -1,6 +1,5 @@
 <template>
     <div id="pageBackground">
-
         <div id="VideoBackground">
             <span id="Center">
                 <h1 id="Rubytitle">Blue Ruby Jewellery</h1>

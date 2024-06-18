@@ -11,6 +11,8 @@ import AboutView from '../views/AboutView.vue'
 import LoginView from '../views/LoginView.vue'
 import UploadPhotoView from '../views/UploadPhotoView.vue'
 import AuntyJensCaseStudyView from '../views/AuntyJensCaseStudyView.vue'
+import SunriseCaseStudyView from '../views/SunriseCaseStudyView.vue'
+import GoodCaseStudyView from '../views/GoodCaseStudyView.vue'
 
 Vue.use(VueRouter)
 
@@ -69,6 +71,16 @@ const routes = [
     path: '/upload-photo',
     name: 'upload',
     component: UploadPhotoView
+  },
+  {
+    path: '/sunrise-sugaring-case-study',
+    name: 'sunrise sugaring',
+    component: SunriseCaseStudyView
+  },
+  {
+    path: '/good-grub-case-study',
+    name: 'good grub',
+    component: GoodCaseStudyView
   },
 ]
 
