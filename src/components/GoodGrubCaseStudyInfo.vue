@@ -24,41 +24,39 @@
                     deserves.</p>
             </article>
             <div>
-                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg" alt="placeholder">
+                <img src="../assets/GoodGrubAssets/GG_WebAssets-04.jpg"
+                    alt="picture of a tube of moisturizer squeezed out">
             </div>
         </div>
         <div id="GoodGrubInfo2">
             <div id="desktopDisplay">
-                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="placeholder">
+                <img src="../assets/GoodGrubAssets/GG_WebAssets-03.jpg"
+                    alt="close up photo of someones cheek with an eye dropper dripping on it">
             </div>
             <article>
                 <h3 class="underline">DELIVERABLES</h3>
+                <p class="smallScale">- Brand Identity Ideation & Design</p>
                 <p class="smallScale">- Packaging Design</p>
-                <p class="smallScale">- Lifestyle Photography</p>
-                <p class="smallScale">- Product Photography</p>
-                <p class="smallScale">- Content Creation + Strategy</p>
-                <p class="smallScale">- Newsletter Campaigns</p>
-                <p class="smallScale">- Campaign Art Direction</p>
+                <p class="smallScale">- Print Collateral Design</p>
             </article>
             <article>
                 <h3 class="underline">INDUSTRY</h3>
-                <p class="smallScale">Ecommerce + Retail</p>
+                <p class="smallScale">Skincare</p>
                 <h3 class="underline">LOCATION</h3>
                 <p class="smallScale">Vancouver,BC</p>
-                <h3 class="underline">WEBSITE</h3>
-                <a id="link" target="_blank" href="http://blueruby.com">Change link to good grub</a>
             </article>
 
         </div>
         <div id="mobileDisplay">
-            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg" alt="placeholder">
+            <img src="../assets/GoodGrubAssets/GG_WebAssets-03.jpg"
+                alt="close up photo of someones cheek with an eye dropper dripping on it">
         </div>
         <div class="blackLine"></div>
         <div id="BrandingDesign">
             <article id="BrandingArticle">
-                <h1 class="articleTitle">Packaging Design</h1>
+                <h1 class="articleTitle">Branding</h1>
                 <p class="fontScale">Beautiful products deserve beautiful
-                    packaging.For BlueRuby’s packaging, we
+                    packaging.For BlueRuby's packaging, we
                     usedtheir signature navy to build a product
                     that feels luxurious but subduedenough to
                     accentuate thebeauty of each item.</p>
@@ -100,6 +98,11 @@ export default {
 
 #GoodGrubInfo>div>img {
     width: 80%;
+}
+
+#desktopDisplay>img {
+    width: 80%;
+    margin-left: 20px;
 }
 
 #BrandingArticle {
@@ -171,8 +174,16 @@ export default {
     font-size: 45px;
 }
 
+#GoodGrubInfo2 {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+
 #VideoBackground {
-    background-image: url(@/assets/BlueRubyAssets/Videos/Essentials_Banner.gif);
+    background-image: url(@/assets/GoodGrubAssets/GG_BehanceFiles_V01-01.jpg);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;

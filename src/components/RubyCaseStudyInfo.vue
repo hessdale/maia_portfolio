@@ -134,6 +134,11 @@ export default {
     display: none;
 }
 
+#desktopDisplay>img {
+    width: 80%;
+    margin-left: 20px;
+}
+
 .articleTitle {
     font-size: 35px;
     font-family: 'NeueHaasUnicaPro-Black';
@@ -219,14 +224,13 @@ export default {
 .underline {
     text-decoration: underline;
     text-align: start;
-
 }
 
 #BlueRubyInfo2 {
     display: grid;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     margin-bottom: 20px;
 }
 
