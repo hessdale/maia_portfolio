@@ -16,8 +16,13 @@
         <span id="HeaderSubMenu">
             <router-link class="link" to="/">Home</router-link>
             <router-link class="link" to="/design">Design</router-link>
-            <router-link class="link" to="/photos">Photography</router-link>
-            <router-link class="link" to="/portraits">Portraits</router-link>
+            <a class="PhotographyLink" id="PhotographyLinkOpen" @click="OpenPhotos()">Photography</a>
+            <a class="PhotographyLink" id="PhotographyLinkClose" @click="ClosePhotos()"
+                style="display: none;">Photography</a>
+            <div id="PhotosMenu">
+                <router-link class="PhotographyLink" to="/portraits">Portraits</router-link>
+                <router-link class="PhotographyLink" to="/photos">Misc. Photos</router-link>
+            </div>
             <a class="CaseStudyLink" id="CaseStudyLinkOpen" @click="OpenCase()">Case Studies</a>
             <a class="CaseStudyLink" id="CaseStudyLinkClose" @click="CloseCase()" style="display: none;">Case
                 Studies</a>
@@ -58,6 +63,16 @@ export default {
             document.getElementById('CaseStudyLinkClose').style.display = 'none';
             document.getElementById('CaseStudyLinkOpen').style.display = 'grid';
         },
+        OpenPhotos() {
+            document.getElementById('PhotosMenu').style.display = 'grid';
+            document.getElementById('PhotographyLinkOpen').style.display = 'none';
+            document.getElementById('PhotographyLinkClose').style.display = 'grid';
+        },
+        ClosePhotos() {
+            document.getElementById('PhotosMenu').style.display = 'none';
+            document.getElementById('PhotographyLinkClose').style.display = 'none';
+            document.getElementById('PhotographyLinkOpen').style.display = 'grid';
+        }
     }
 }
 </script>
@@ -83,12 +98,19 @@ export default {
 
 #CaseStudyMenu {
     display: none;
-    width: 19%;
-    text-align: center;
+    justify-items: end;
 }
 
 
 .CaseStudyLink {
+    text-decoration: none;
+    color: #C72828;
+    font-size: larger;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.PhotographyLink {
     text-align: center;
     text-decoration: none;
     color: #C72828;
@@ -97,11 +119,16 @@ export default {
     font-weight: 700;
 }
 
+#PhotosMenu {
+    display: none;
+    width: 19%;
+    justify-items: end;
+}
+
 .link {
     text-decoration: none;
     color: #C72828;
     font-size: larger;
-    width: 15%;
 }
 
 #CloseIcon {
@@ -111,10 +138,10 @@ export default {
 
 #HeaderSubMenu {
     display: none;
-    justify-items: center;
+    justify-items: end;
     background-color: #EAE5DE;
-    text-align: center;
     padding-bottom: 15px;
+    padding-right: 20px;
 }
 
 #header {
