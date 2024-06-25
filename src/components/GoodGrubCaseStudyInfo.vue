@@ -55,21 +55,23 @@
         <div id="BrandingDesign">
             <article id="BrandingArticle">
                 <h1 class="articleTitle">Branding</h1>
-                <p class="fontScale">Beautiful products deserve beautiful
-                    packaging.For BlueRuby's packaging, we
-                    usedtheir signature navy to build a product
-                    that feels luxurious but subduedenough to
-                    accentuate thebeauty of each item.</p>
+                <p class="fontScale">Tying into this brand's playful voice and
+                    product names such as “Secret Sauce”,
+                    elements of retro restaurant branding were
+                    brought in for a unique touch. Illustrations
+                    on each product label feature stylized
+                    drawings of the ingredients inside..</p>
             </article>
             <div id="BrandingImages">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/JewelleryPackagingDesign_Photography.jpg"
-                    alt="floating jewelry boxes and jewlery bags with the words blue ruby embossed on them">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Jewellery-Box-Bag-and-Gift-Card.jpg"
-                    alt="blue ruby jewelry packaging floating with a gift card coming out of the jewelry bag">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Birthstone-Info-Cards-Mockup.jpg"
-                    alt="cards with embossed birthstones name and card matching the color">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Custom-Wrapping-Paper-With-Brand-Icons.jpg"
-                    alt="wrapping paper with brand icons">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-01.jpg"
+                    alt="close up photo of two peoples eyes and ">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-03.jpg"
+                    alt="collage of skin cream photos and people with it on">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-04.jpg"
+                    alt="collage of good grub branding and serum photo">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-06.jpg" alt="wrapping paper with brand icons">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-07.jpg" alt="wrapping paper with brand icons">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-08.jpg" alt="wrapping paper with brand icons">
             </div>
         </div>
     </div>
@@ -81,6 +83,14 @@ export default {
 }
 </script>
 <style scoped>
+#GoodGrubInfo>article {
+    width: 90%;
+}
+
+#GrubSubInfo {
+    padding-bottom: 15px;
+}
+
 #mobileDisplay {
     display: none;
 }
@@ -92,12 +102,12 @@ export default {
 
 #GoodGrubInfo>div {
     display: grid;
-    justify-items: center;
+    justify-items: end;
     align-items: center;
 }
 
 #GoodGrubInfo>div>img {
-    width: 80%;
+    width: 100%;
 }
 
 #desktopDisplay>img {
@@ -116,10 +126,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
-}
-
-#BrandingImages>img {
-    width: 80%;
 }
 
 .blackLine {
@@ -152,12 +158,20 @@ export default {
 #GoodGrubInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: start;
     justify-items: center;
-    margin: 5%;
 }
 
+#BrandingImages>img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#BrandingImages {
+    margin-top: 20px;
+}
 
 #Center {
     text-align: center;
@@ -165,6 +179,7 @@ export default {
     justify-items: center;
     align-items: center;
     padding-top: 15vh;
+    color: #EAE5DE;
 }
 
 #Grubtitle {
@@ -235,11 +250,6 @@ export default {
         text-align: center;
         margin: 0;
         margin-bottom: 50px;
-    }
-
-    #BrandingImages>img {
-        width: 100%;
-        margin-bottom: 25px;
     }
 
     .articleTitle {
