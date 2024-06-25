@@ -69,9 +69,14 @@
                     alt="collage of skin cream photos and people with it on">
                 <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-04.jpg"
                     alt="collage of good grub branding and serum photo">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-06.jpg" alt="wrapping paper with brand icons">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-07.jpg" alt="wrapping paper with brand icons">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-08.jpg" alt="wrapping paper with brand icons">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-05.jpg"
+                    alt="two tubes of good grub moisturizer partially squeezed out onto white background">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-06.jpg"
+                    alt="collage of packaging for moisturizer and tube partially squeezed">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-07.jpg"
+                    alt=" flat layout of moisturizer packaging">
+                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-08.jpg"
+                    alt="collage of two posters reading add some flavour to your routine and models using skin cream">
             </div>
         </div>
     </div>
