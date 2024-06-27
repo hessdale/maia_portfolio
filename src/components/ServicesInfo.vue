@@ -42,10 +42,10 @@
 
         <div id="commercial">
             <div id="commercialImg"><img src="../assets/ServicesAssets/JewelryModel.jpg"
-                    alt="model wearing jewelry from blue ruby" width="80%">
+                    alt="model wearing jewelry from blue ruby">
             </div>
-            <article>
-                <h1 class="title">Commercial + Creative Photography</h1>
+            <article id="commercialArticle">
+                <h1 class="title">Commercial & Creative Design</h1>
                 <p>Powerful and unique imagery is a crucial component of any
                     business. With a collaborative approach, I'll create on-brand,
                     top notch photos that will help your brand grow. From
@@ -67,6 +67,9 @@
                     </div>
                 </div>
             </article>
+            <div id="commercialImgMobile"><img src="../assets/ServicesAssets/JewelryModel.jpg"
+                    alt="model wearing jewelry from blue ruby">
+            </div>
         </div>
     </div>
 </template>
@@ -84,6 +87,10 @@ export default {
     align-items: center;
 }
 
+#commercialImg>img {
+    width: 80%;
+}
+
 #canDo {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -94,6 +101,7 @@ export default {
     justify-items: start;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 30px;
 }
 
 #commercial {
@@ -127,7 +135,7 @@ export default {
     justify-items: center;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    padding: 30px;
+    padding-bottom: 30px;
 }
 
 #creativeInfo {
@@ -172,7 +180,7 @@ h1 {
 
 #doBackground {
     background-image: url(@/assets/ServicesAssets/ServicesHeader.gif);
-    width: 60%;
+    width: 80%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
@@ -180,5 +188,66 @@ h1 {
     justify-items: center;
     align-items: center;
     margin: 20px;
+}
+
+#commercialImgMobile {
+    display: none;
+}
+
+@media screen and (max-width :600px) {
+    #doBackground {
+        width: 100%;
+    }
+
+    #creativeDesign {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #chalkboardImg>img {
+        width: 100%;
+    }
+
+    #commercialImg {
+        display: none;
+    }
+
+    #commercial {
+        grid-template-columns: 1fr;
+    }
+
+    #commercialImgMobile {
+        display: grid;
+    }
+
+    #commercialImgMobile>img {
+        width: 100%;
+    }
+
+    #commercialArticle>p {
+        text-align: center;
+        font-size: calc(100% + 1.2vw);
+        margin: 4%;
+    }
+
+    #commercialArticle>h1 {
+        text-align: center;
+        font-size: calc(100% + 5vw);
+        margin: 2%;
+    }
+
+    #canDo>p {
+        font-size: calc(100% + 1.2vw);
+    }
+
+    #commercialInfo>div>p {
+        font-size: calc(100% + 1.2vw);
+    }
+
+    #commercialArticle>div {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 </style>
