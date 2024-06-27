@@ -121,7 +121,6 @@ export default {
 
 #PhotosMenu {
     display: none;
-    width: 19%;
     justify-items: end;
 }
 
