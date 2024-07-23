@@ -24,13 +24,13 @@
                     deserves.</p>
             </article>
             <div>
-                <img src="../assets/GoodGrubAssets/GG_WebAssets-04.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_WebAssets-04.jpg"
                     alt="picture of a tube of moisturizer squeezed out">
             </div>
         </div>
         <div id="GoodGrubInfo2">
             <div id="desktopDisplay">
-                <img src="../assets/GoodGrubAssets/GG_WebAssets-03.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_WebAssets-03.jpg"
                     alt="close up photo of someones cheek with an eye dropper dripping on it">
             </div>
             <article>
@@ -48,7 +48,7 @@
 
         </div>
         <div id="mobileDisplay">
-            <img src="../assets/GoodGrubAssets/GG_WebAssets-03.jpg"
+            <img src="@/assets/GoodGrubAssets/GG_WebAssets-03.jpg"
                 alt="close up photo of someones cheek with an eye dropper dripping on it">
         </div>
         <div class="blackLine"></div>
@@ -63,19 +63,19 @@
                     drawings of the ingredients inside..</p>
             </article>
             <div id="BrandingImages">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-01.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-01.jpg"
                     alt="close up photo of two peoples eyes and ">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-03.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-03.jpg"
                     alt="collage of skin cream photos and people with it on">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-04.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-04.jpg"
                     alt="collage of good grub branding and serum photo">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-05.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-05.jpg"
                     alt="two tubes of good grub moisturizer partially squeezed out onto white background">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-06.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-06.jpg"
                     alt="collage of packaging for moisturizer and tube partially squeezed">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-07.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-07.jpg"
                     alt=" flat layout of moisturizer packaging">
-                <img src="../assets/GoodGrubAssets/GG_BehanceFiles_V01-08.jpg"
+                <img src="@/assets/GoodGrubAssets/GG_BehanceFiles_V01-08.jpg"
                     alt="collage of two posters reading add some flavour to your routine and models using skin cream">
             </div>
         </div>

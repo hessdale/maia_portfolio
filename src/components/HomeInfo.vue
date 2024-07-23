@@ -1,46 +1,46 @@
 <template>
     <div id="page">
         <div id="parent">
-            <img @click="openFridge()" id="background" src="../assets/HomeAssets/FridgeBackground.png"
+            <img @click="openFridge()" id="background" src="@/assets/HomeAssets/FridgeBackground.png"
                 alt="background of a kitchen with washer and a fridge with a sign above saying click to open my fridge">
             <div id="mobileBackground">
-                <img @click="openFridgeMobile()" id="mobileClose" src="../assets/HomeAssets/FridgeMobileBackground.png"
+                <img @click="openFridgeMobile()" id="mobileClose" src="@/assets/HomeAssets/FridgeMobileBackground.png"
                     alt="closed fridge icon with no kitchen surrounding it for mobile view">
             </div>
-            <img @click="closeFridge()" id="openFridge" src="../assets/HomeAssets/FridgeOpen.png"
+            <img @click="closeFridge()" id="openFridge" src="@/assets/HomeAssets/FridgeOpen.png"
                 alt="fridge open with icons in it and icons directing to pages">
             <router-link to="/contact">
-                <img class="icon" id="milk" src="../assets/HomeAssets/ContactMilk.png"
+                <img class="icon" id="milk" src="@/assets/HomeAssets/ContactMilk.png"
                     alt="icon of milk labeled contact"></router-link>
             <router-link to="/case-study">
-                <img class="icon" id="yogurt" src="../assets/HomeAssets/CaseStudyYogurt.png"
+                <img class="icon" id="yogurt" src="@/assets/HomeAssets/CaseStudyYogurt.png"
                     alt="icon of yogurt labeled case study">
             </router-link>
             <router-link to="/photos">
-                <img class="icon" id="pickles" src="../assets/HomeAssets/PhotosPickels.png"
+                <img class="icon" id="pickles" src="@/assets/HomeAssets/PhotosPickels.png"
                     alt="icon of pickles labeled photos">
             </router-link>
             <router-link to="/case-study">
-                <img class="icon" id="oj" src="../assets/HomeAssets/CaseStudyOJ.png"
+                <img class="icon" id="oj" src="@/assets/HomeAssets/CaseStudyOJ.png"
                     alt="icon of orange juice labeled case study">
             </router-link>
             <router-link to="/about">
-                <img class="icon" id="sardines" src="../assets/HomeAssets/AboutMeSardines.png"
+                <img class="icon" id="sardines" src="@/assets/HomeAssets/AboutMeSardines.png"
                     alt="icon of sardines labeled about me">
             </router-link>
             <router-link to="/portraits">
-                <img class="icon" id="film" src="../assets/HomeAssets/PortraitsFilm.png"
+                <img class="icon" id="film" src="@/assets/HomeAssets/PortraitsFilm.png"
                     alt="icon of a film roll labeled portraits">
             </router-link>
             <router-link to="/services">
-                <img class="icon" id="butter" src="../assets/HomeAssets/ServicesButter.png"
+                <img class="icon" id="butter" src="@/assets/HomeAssets/ServicesButter.png"
                     alt="icon of butter stick labeled services">
             </router-link>
             <router-link to="/design">
-                <img class="icon" id="mayo" src="../assets/HomeAssets/DesignMayo.png" alt="icon of mayo labeled design">
+                <img class="icon" id="mayo" src="@/assets/HomeAssets/DesignMayo.png" alt="icon of mayo labeled design">
             </router-link>
             <router-link to="/case-study">
-                <img class="icon" id="wine" src="../assets/HomeAssets/CaseStudyWine.png"
+                <img class="icon" id="wine" src="@/assets/HomeAssets/CaseStudyWine.png"
                     alt="icon of wine bottle labeled case study">
             </router-link>
         </div>

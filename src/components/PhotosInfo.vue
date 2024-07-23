@@ -23,7 +23,7 @@ import axios from "axios";
 export default {
     methods: {
         getImageUrl(file_name) {
-            let image_location = require("../../../maia_backend/images/" + file_name)
+            let image_location = require("@/assets/images/" + file_name)
             return image_location
         },
 

@@ -4,9 +4,9 @@
             <h1 id="contact">contact</h1>
         </router-link>
         <div id="icons">
-            <a href="http://www.behance.net"><img src="../assets/NavAssets/behance-tag-beige.svg"
+            <a href="http://www.behance.net"><img src="@/assets/NavAssets/behance-tag-beige.svg"
                     alt="icon of the behance logo" width="45px"></a>
-            <a href="http://www.instagram.com"><img src="../assets/NavAssets/instagram-beige.svg"
+            <a href="http://www.instagram.com"><img src="@/assets/NavAssets/instagram-beige.svg"
                     alt="icon of the instagram logo" width="45px"></a>
         </div>
     </div>

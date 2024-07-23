@@ -6,7 +6,7 @@
                     <h1 class="whiteFont" id="Bold">Whose kid is this?</h1>
                 </div>
                 <div id="kid">
-                    <img src="../assets/AboutAssets/MaiaKid.jpg" alt="a young photo of Maia giving the peace sign">
+                    <img src="@/assets/AboutAssets/MaiaKid.jpg" alt="a young photo of Maia giving the peace sign">
                 </div>
                 <div class="mobile">
                     <p class="whiteFont">This kid is me, and she (many years later) will work
@@ -34,7 +34,7 @@
                     <h1 class="whiteFont" id="Bold">Not a kid anymore.</h1>
                 </div>
                 <div id="recent">
-                    <img src="../assets/AboutAssets/MaiaAdult.jpg" alt="a recent headshot of Maia">
+                    <img src="@/assets/AboutAssets/MaiaAdult.jpg" alt="a recent headshot of Maia">
                 </div>
                 <div class="mobile">
                     <p class="whiteFont">Today, this girl does it all! From photography to
@@ -45,8 +45,8 @@
             </span>
             <article id="contact">
                 <a id="email" href="mailto:hadfieldmaia@gmail.com">hadfieldmaia@gmail.com</a>
-                <img src="../assets/AboutAssets/FloatingHeads.gif"
-                    alt="gif of floating heads of maia scrolling to the leaft">
+                <img src="@/assets/AboutAssets/FloatingHeads.gif"
+                    alt="gif of floating heads of maia scrolling to the left">
             </article>
         </div>
     </div>

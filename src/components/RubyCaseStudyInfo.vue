@@ -25,13 +25,13 @@
                     their history and future goals.</p>
             </article>
             <div>
-                <img src="../assets/BlueRubyAssets/Photography/White_shirt.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/White_shirt.jpg"
                     alt="Woman wearing a red shirt and jewelry">
             </div>
         </div>
         <div id="BlueRubyInfo2">
             <div id="desktopDisplay">
-                <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
+                <img src="@/assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
             </div>
             <article>
                 <h3 class="underline">DELIVERABLES</h3>
@@ -53,7 +53,7 @@
 
         </div>
         <div id="mobileDisplay">
-            <img src="../assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
+            <img src="@/assets/BlueRubyAssets/Photography/2PplJewelry.jpeg">
         </div>
         <div class="blackLine"></div>
         <div id="packagingDesign">
@@ -66,13 +66,13 @@
                     accentuate thebeauty of each item.</p>
             </article>
             <div id="packagingImages">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/JewelleryPackagingDesign_Photography.jpg"
+                <img src="@/assets/BlueRubyAssets/Packaging Designs/JewelleryPackagingDesign_Photography.jpg"
                     alt="floating jewelry boxes and jewlery bags with the words blue ruby embossed on them">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Jewellery-Box-Bag-and-Gift-Card.jpg"
+                <img src="@/assets/BlueRubyAssets/Packaging Designs/Jewellery-Box-Bag-and-Gift-Card.jpg"
                     alt="blue ruby jewelry packaging floating with a gift card coming out of the jewelry bag">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Birthstone-Info-Cards-Mockup.jpg"
+                <img src="@/assets/BlueRubyAssets/Packaging Designs/Birthstone-Info-Cards-Mockup.jpg"
                     alt="cards with embossed birthstones name and card matching the color">
-                <img src="../assets/BlueRubyAssets/Packaging Designs/Custom-Wrapping-Paper-With-Brand-Icons.jpg"
+                <img src="@/assets/BlueRubyAssets/Packaging Designs/Custom-Wrapping-Paper-With-Brand-Icons.jpg"
                     alt="wrapping paper with brand icons">
             </div>
         </div>
@@ -86,17 +86,17 @@
                     Ruby's unique and substantial selection.</p>
             </article>
             <div id="photographyImages">
-                <img src="../assets/BlueRubyAssets/Photography/Friends.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Friends.jpg"
                     alt="people with their arms around each other wearing blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Fruit_Bowl.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Fruit_Bowl.jpg"
                     alt="hand grabbing at fruit in a fruit bowl wearing blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Purple_Shirt.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Purple_Shirt.jpg"
                     alt="woman wearing a purple shirt wearing multiple bracelets and necklaces from blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Gold_Chains.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Gold_Chains.jpg"
                     alt="woman wearing a black cardigan and gold chains from blue ruby jewelry">
-                <img src="../assets/BlueRubyAssets/Photography/Red_Shirt.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Red_Shirt.jpg"
                     alt="woman wearing a red shirt and wearing multiple necklaces and rings from blue ruby jewelry ">
-                <img src="../assets/BlueRubyAssets/Photography/Popping_Bubbles.jpg"
+                <img src="@/assets/BlueRubyAssets/Photography/Popping_Bubbles.jpg"
                     alt="small child popping bubbles and woman behind her is wearing blue ruby jewelry">
             </div>
         </div>
@@ -110,13 +110,13 @@
                     seasonal collections and edits.</p>
             </article>
             <div id="videosContent">
-                <img src="../assets/BlueRubyAssets/Videos/BannerVideo.gif"
+                <img src="@/assets/BlueRubyAssets/Videos/BannerVideo.gif"
                     alt="a gif of twomodels in a pool with blue ruby jewellery eating fruit">
-                <img src="../assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
+                <img src="@/assets/BlueRubyAssets/Videos/Essentials_Banner.gif"
                     alt="a gif of two models in front of gray back drop wearing blue ruby jewellery">
-                <img src="../assets/BlueRubyAssets/Videos/MomVideo.gif"
+                <img src="@/assets/BlueRubyAssets/Videos/MomVideo.gif"
                     alt="a gif of families modelling blue ruby jewellery in front of a gray back drop">
-                <img src="../assets/BlueRubyAssets/Videos/PearlsVideo.gif"
+                <img src="@/assets/BlueRubyAssets/Videos/PearlsVideo.gif"
                     alt="three gifs of models wearing blue ruby pearls">
             </div>
         </div>

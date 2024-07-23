@@ -23,13 +23,13 @@
                     unique branding that fits into her mission.</p>
             </article>
             <div>
-                <img src="../assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-03.jpg"
+                <img src="@/assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-03.jpg"
                     alt="picture of a black glove applying sugaring wax solution to the skin">
             </div>
         </div>
         <div id="SunriseInfo2">
             <div id="desktopDisplay">
-                <img src="../assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-04.jpg"
+                <img src="@/assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-04.jpg"
                     alt="four smooth legs in the air on a white backdrop">
             </div>
             <article>
@@ -47,7 +47,7 @@
 
         </div>
         <div id="mobileDisplay">
-            <img src="../assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-04.jpg"
+            <img src="@/assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-04.jpg"
                 alt="four smooth legs in the air on a white backdrop">
         </div>
         <div class="blackLine"></div>
@@ -61,13 +61,13 @@
                     comfortabillity of the brand.</p>
             </article>
             <div id="BrandingImages">
-                <img src="../assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-06.jpg"
+                <img src="@/assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-06.jpg"
                     alt="close up photo of two peoples eyes and ">
-                <img src="../assets/SunriseSugaringAssets/SandwichBoardFront.png"
+                <img src="@/assets/SunriseSugaringAssets/SandwichBoardFront.png"
                     alt="close up photo of two peoples eyes and ">
-                <img src="../assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-05.jpg"
+                <img src="@/assets/SunriseSugaringAssets/MH_SunriseSugaringCaseStudy_Layout-05.jpg"
                     alt="close up photo of two peoples eyes and ">
-                <img src="../assets/SunriseSugaringAssets/Business_Card_Green.png"
+                <img src="@/assets/SunriseSugaringAssets/Business_Card_Green.png"
                     alt="close up photo of two peoples eyes and ">
             </div>
         </div>

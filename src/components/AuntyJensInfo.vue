@@ -21,7 +21,7 @@
 
             </div>
             <div id="pizzaSign">
-                <img src="../assets/AuntyJensAssets/AJSign.jpg"
+                <img src="@/assets/AuntyJensAssets/AJSign.jpg"
                     alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box">
             </div>
         </article>
@@ -42,7 +42,7 @@
             </div>
         </article>
         <div id="boxImage">
-            <img src="../assets/AuntyJensAssets/AJPizzaBox.jpg"
+            <img src="@/assets/AuntyJensAssets/AJPizzaBox.jpg"
                 alt="green pizza box with an icon of a green woman and a pizza box on it">
         </div>
         <article class="desktop" id="deliverables">
@@ -74,15 +74,15 @@
                     just as perfect as their 'za!</p>
             </div>
             <div id="imgColumn">
-                <img src="../assets/AuntyJensAssets/AJSign.jpg"
+                <img src="@/assets/AuntyJensAssets/AJSign.jpg"
                     alt="sign of aunty jen's pizzeria with an icon of a green woman and a pizza box">
-                <img src="../assets/AuntyJensAssets/AJPitchWhite.jpg"
+                <img src="@/assets/AuntyJensAssets/AJPitchWhite.jpg"
                     alt="Aunty Jen's pitch board in white with three logos">
-                <img src="../assets/AuntyJensAssets/AJPitchBlack.jpg"
+                <img src="@/assets/AuntyJensAssets/AJPitchBlack.jpg"
                     alt="Aunty Jen's pitch board in black with three logos">
-                <img src="../assets/AuntyJensAssets/AJMoodboard.png"
+                <img src="@/assets/AuntyJensAssets/AJMoodboard.png"
                     alt="Aunty Jen's mood board with multiple images of branding examples on it">
-                <img src="../assets/AuntyJensAssets/AJPitchAssets.jpg"
+                <img src="@/assets/AuntyJensAssets/AJPitchAssets.jpg"
                     alt="Aunty Jen's pitch assets with info such as fonts and color palettes">
             </div>
         </article>

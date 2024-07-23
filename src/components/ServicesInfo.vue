@@ -35,13 +35,13 @@
             </article>
 
             <div id="chalkboardImg">
-                <img src="../assets/ServicesAssets/ChalkSign.jpg"
+                <img src="@/assets/ServicesAssets/ChalkSign.jpg"
                     alt="Chalk sign designed and reading eco friendly hair removal this way">
             </div>
         </div>
 
         <div id="commercial">
-            <div id="commercialImg"><img src="../assets/ServicesAssets/JewelryModel.jpg"
+            <div id="commercialImg"><img src="@/assets/ServicesAssets/JewelryModel.jpg"
                     alt="model wearing jewelry from blue ruby">
             </div>
             <article id="commercialArticle">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </article>
-            <div id="commercialImgMobile"><img src="../assets/ServicesAssets/JewelryModel.jpg"
+            <div id="commercialImgMobile"><img src="@/assets/ServicesAssets/JewelryModel.jpg"
                     alt="model wearing jewelry from blue ruby">
             </div>
         </div>
